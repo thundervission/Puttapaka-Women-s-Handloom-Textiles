@@ -28,8 +28,8 @@ Language: **TypeScript** (Next.js 16 + React 19 + Tailwind CSS 4).
     - Include `NEXT_PUBLIC_WHATSAPP_NUMBER` and `NEXT_PUBLIC_SITE_URL` with placeholder values
     - _Requirements: 2.5_
 
-- [ ] 2. Define TypeScript types in `types/product.ts`
-  - [ ] 2.1 Create `types/product.ts` with `ProductAvailability`, `ProductImage`, and `Product` types
+- [x] 2. Define TypeScript types in `types/product.ts`
+  - [x] 2.1 Create `types/product.ts` with `ProductAvailability`, `ProductImage`, and `Product` types
     - Export `ProductAvailability` union type with exactly five values: `"available"`, `"low_stock"`, `"sold_out"`, `"pre_order"`, `"hidden"`
     - Export `ProductImage` interface with required `src: string` and `alt: string` fields
     - Export `Product` interface with all fields: `id`, `slug`, `name`, `description`, `priceInr`, `categorySlug`, `fabric?`, `color?`, `dimensions?`, `blouseIncluded?`, `careInstructions?`, `availability`, `featured?`, `newArrival?`, `images`, `seo?`
@@ -41,17 +41,17 @@ Language: **TypeScript** (Next.js 16 + React 19 + Tailwind CSS 4).
     - Use `fast-check` to generate arbitrary `Product`-shaped objects and assert: `id` matches `/^PWT-[A-Za-z0-9-]+$/`, `slug` matches `/^[a-z0-9-]+$/`, `priceInr` is a positive integer, `availability` is one of the five valid values
     - Also assert uniqueness of `id` and `slug` across the real `products` array
 
-- [ ] 3. Create static data files
-  - [ ] 3.1 Create `data/site.ts` exporting `siteConfig`
+- [x] 3. Create static data files
+  - [x] 3.1 Create `data/site.ts` exporting `siteConfig`
     - Read `NEXT_PUBLIC_WHATSAPP_NUMBER` and `NEXT_PUBLIC_SITE_URL` from `process.env`, falling back to empty string
     - Include: `name`, `shortName`, `description`, `whatsappNumber`, `siteUrl`, `instagramUrl`, `email`, `location`, `businessHours` — all TBD fields use `"[TBD]"` placeholder strings
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.6_
-  - [ ] 3.2 Create `data/categories.ts` with `Category` interface, `categories` array, and `getCategoryBySlug` helper
+  - [x] 3.2 Create `data/categories.ts` with `Category` interface, `categories` array, and `getCategoryBySlug` helper
     - Export `Category` interface: `slug`, `name`, `description`, `image`
     - Export `categories: Category[]` array — initially empty, populated with real data later
     - Export `getCategoryBySlug(slug: string): Category | undefined`
     - _Requirements: 10.5, 22.3_
-  - [ ] 3.3 Create `data/products.ts` with `Product[]` array and all query helpers
+  - [x] 3.3 Create `data/products.ts` with `Product[]` array and all query helpers
     - Export `products: Product[]` typed array — initially empty (at least two placeholder products to unblock development)
     - Export `getPublicProducts()` — filters out `availability === 'hidden'`
     - Export `getFeaturedProducts()` — returns public products with `featured === true`
@@ -63,7 +63,7 @@ Language: **TypeScript** (Next.js 16 + React 19 + Tailwind CSS 4).
     - **Validates: Requirements 3.8, 9.1, 11.2, 19.8**
     - For any `Product` with `availability === 'hidden'`, assert it does not appear in `getPublicProducts()`, `getFeaturedProducts()`, or `getPublicCategorySlugs()` output
 
-- [ ] 4. Checkpoint — Foundation
+- [x] 4. Checkpoint — Foundation
   - Ensure all tests pass, `next build` succeeds with no TypeScript or lint errors, and `.env.example` is present. Ask the user if questions arise.
 
 ---

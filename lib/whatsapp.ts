@@ -1,10 +1,18 @@
-import type { Product } from "@/types/product";
+import type { PublishedProduct } from "@/types/product";
 import { siteConfig } from "@/data/site";
 import { formatPrice } from "@/lib/utils";
 
 /**
- * Strips all non-digit characters from phoneNumber and constructs
- * an encoded https://wa.me/ click-to-chat URL.
+ * Normalizes a phone number for WhatsApp's international URL format.
+ * Returns null when the value cannot identify a plausible phone number.
+ */
+export function normalizeWhatsAppNumber(phoneNumber?: string): string | null {
+  const digits = phoneNumber?.replace(/\D/g, "") ?? "";
+  return digits.length >= 7 && digits.length <= 15 ? digits : null;
+}
+
+/**
+ * Constructs an encoded https://wa.me/ click-to-chat URL.
  *
  * This is the ONLY place WhatsApp URLs are constructed.
  * No component or utility should concatenate wa.me strings directly.
@@ -15,8 +23,10 @@ export function createWhatsAppUrl({
 }: {
   phoneNumber: string;
   message: string;
-}): string {
-  const digits = phoneNumber.replace(/\D/g, "");
+}): string | null {
+  const digits = normalizeWhatsAppNumber(phoneNumber);
+  if (!digits) return null;
+
   const encoded = encodeURIComponent(message);
   return `https://wa.me/${digits}?text=${encoded}`;
 }
@@ -28,7 +38,7 @@ export function createWhatsAppUrl({
  * conversation. The seller confirms availability, payment, and shipping.
  */
 export function createProductWhatsAppMessage(
-  product: Product,
+  product: PublishedProduct,
   productUrl: string
 ): string {
   return [
@@ -38,7 +48,9 @@ export function createProductWhatsAppMessage(
     ``,
     `Product: ${product.name}`,
     `ID: ${product.id}`,
-    `Price: ${formatPrice(product.priceInr)}`,
+    ...(product.priceInr !== undefined
+      ? [`Price: ${formatPrice(product.priceInr)}`]
+      : []),
     `Link: ${productUrl}`,
     ``,
     `Could you please confirm availability and share details on how to order?`,

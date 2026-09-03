@@ -13,6 +13,9 @@ export type ProductAvailability =
   | "pre_order"
   | "hidden";
 
+export type ProductStatus = "draft" | "published";
+export type DraftConfidence = "HIGH" | "MEDIUM" | "LOW";
+
 /**
  * A single image for a product.
  * `alt` is required and must describe the product visually —
@@ -38,11 +41,11 @@ export interface Product {
   /** Display name */
   name: string;
   /** Full product description — owner-approved copy only */
-  description: string;
+  description?: string;
   /** Price in Indian Rupees as a positive integer, e.g. 1850 */
-  priceInr: number;
+  priceInr?: number;
   /** Matches a slug in data/categories.ts */
-  categorySlug: string;
+  categorySlug?: string;
   /** Fabric type, e.g. 'Handloom Cotton' */
   fabric?: string;
   /** Primary colour, e.g. 'Maroon' */
@@ -53,8 +56,20 @@ export interface Product {
   blouseIncluded?: boolean;
   /** Care instructions as a list of steps */
   careInstructions?: string[];
-  /** Current availability state */
-  availability: ProductAvailability;
+  /** Current availability state; drafts may leave this unconfirmed */
+  availability?: ProductAvailability;
+  /** Controls whether a product participates in public discovery */
+  status: ProductStatus;
+  /** Marks intentionally visible provisional catalog content */
+  provisional?: boolean;
+  /** AI mapping context shown only in the internal review workspace */
+  review?: {
+    productType: string;
+    detectedColors: string;
+    detectedPattern: string;
+    confidence: DraftConfidence;
+    notes: string;
+  };
   /** Show in featured sections on the homepage */
   featured?: boolean;
   /** Show in new arrivals section */
@@ -69,3 +84,8 @@ export interface Product {
     description?: string;
   };
 }
+
+export type PublishedProduct = Omit<Product, "categorySlug"> & {
+  categorySlug: string;
+  status: "published";
+};

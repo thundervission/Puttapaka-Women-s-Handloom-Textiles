@@ -2,8 +2,9 @@ import { createWhatsAppUrl } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
 interface WhatsAppButtonProps {
-  phoneNumber: string;
-  message: string;
+  phoneNumber?: string;
+  message?: string;
+  href?: string;
   label?: string;
   ariaLabel?: string;
   variant?: "primary" | "outline" | "icon";
@@ -21,25 +22,27 @@ const variantClasses = {
 
 /**
  * WhatsApp CTA button.
- * - Renders null when phoneNumber is empty (graceful degradation for local dev).
- * - All WhatsApp URLs are constructed via createWhatsAppUrl — never by hand.
+ * - Renders null when target href or phoneNumber is empty (graceful degradation).
+ * - Accepts either pre-built href OR phoneNumber + message.
  * - Icon-only variant requires ariaLabel for accessibility.
  */
 export default function WhatsAppButton({
   phoneNumber,
-  message,
+  message = "",
+  href,
   label = "Order on WhatsApp",
   ariaLabel,
   variant = "primary",
   className,
 }: WhatsAppButtonProps) {
-  if (!phoneNumber) return null;
+  const targetHref =
+    href ?? (phoneNumber ? createWhatsAppUrl({ phoneNumber, message }) : null);
 
-  const href = createWhatsAppUrl({ phoneNumber, message });
+  if (!targetHref) return null;
 
   return (
     <a
-      href={href}
+      href={targetHref}
       target="_blank"
       rel="noopener noreferrer"
       className={cn(variantClasses[variant], className)}

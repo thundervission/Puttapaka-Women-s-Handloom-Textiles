@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
+import { createGeneralWhatsAppMessage, createWhatsAppUrl } from "@/lib/whatsapp";
 
 const shopLinks = [
   { href: "/shop", label: "All Sarees" },
-  { href: "/collections", label: "Collections" },
+  { href: "/collections/cotton-sarees", label: "Collections" },
 ];
 
 const infoLinks = [
@@ -25,6 +26,10 @@ const policyLinks = [
  */
 export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
+  const whatsappUrl = createWhatsAppUrl({
+    phoneNumber: siteConfig.whatsappNumber,
+    message: createGeneralWhatsAppMessage(),
+  });
 
   return (
     <footer className="bg-[var(--primary)] text-[var(--surface)] mt-auto">
@@ -42,9 +47,9 @@ export default function SiteFooter() {
             <address className="not-italic text-body-sm text-[var(--surface)]/70 space-y-1">
               <p>{siteConfig.location}</p>
             </address>
-            {siteConfig.whatsappNumber && (
+            {whatsappUrl && (
               <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}`}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 mt-3 text-body-sm text-[var(--surface)]/80 hover:text-[var(--surface)] transition-colors"

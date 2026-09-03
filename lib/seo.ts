@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import type { Product } from "@/types/product";
+import type { PublishedProduct } from "@/types/product";
 import type { Category } from "@/data/categories";
 import { siteConfig } from "@/data/site";
-import { formatPrice } from "@/lib/utils";
 
 /**
  * Builds Next.js Metadata for a product detail page.
  * og:image is set to the primary product image (absolute URL).
  */
 export function buildProductMetadata(
-  product: Product,
+  product: PublishedProduct,
   productUrl: string
 ): Metadata {
   const title =
@@ -18,7 +17,7 @@ export function buildProductMetadata(
 
   const description =
     product.seo?.description ??
-    `${product.name} — ${formatPrice(product.priceInr)}. ${product.description.slice(0, 120)}`;
+    `${product.name}. ${product.description?.slice(0, 120) ?? "Product details available on request."}`;
 
   const primaryImageSrc = product.images[0]?.src ?? "";
   // Build absolute URL for og:image

@@ -7,7 +7,7 @@ import { createGeneralWhatsAppMessage } from "@/lib/whatsapp";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/shop", label: "Shop" },
-  { href: "/collections", label: "Collections" },
+  { href: "/collections/cotton-sarees", label: "Collections" },
   { href: "/story", label: "Our Story" },
   { href: "/contact", label: "Contact" },
 ];

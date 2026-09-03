@@ -48,13 +48,18 @@ export function filterByCategory<T extends { categorySlug: string }>(
 /**
  * Sorts products by priceInr. Returns a new array — does not mutate input.
  */
-export function sortByPrice<T extends { priceInr: number }>(
+export function sortByPrice<T extends { priceInr?: number }>(
   products: T[],
   direction: "asc" | "desc"
 ): T[] {
-  return [...products].sort((a, b) =>
-    direction === "asc" ? a.priceInr - b.priceInr : b.priceInr - a.priceInr
-  );
+  return [...products].sort((a, b) => {
+    if (a.priceInr === undefined && b.priceInr === undefined) return 0;
+    if (a.priceInr === undefined) return 1;
+    if (b.priceInr === undefined) return -1;
+    return direction === "asc"
+      ? a.priceInr - b.priceInr
+      : b.priceInr - a.priceInr;
+  });
 }
 
 /**

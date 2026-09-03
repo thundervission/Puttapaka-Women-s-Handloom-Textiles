@@ -7,6 +7,33 @@
  *
  * TBD fields are marked — replace before production launch.
  */
+function getSiteUrl(): string {
+  const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim() ?? "";
+
+  if (!configuredUrl || configuredUrl.includes("your-domain-here")) {
+    throw new Error(
+      "NEXT_PUBLIC_SITE_URL must be set to the public site URL before building."
+    );
+  }
+
+  let parsedUrl: URL;
+  try {
+    parsedUrl = new URL(configuredUrl);
+  } catch {
+    throw new Error(
+      "NEXT_PUBLIC_SITE_URL must be a valid absolute HTTP or HTTPS URL."
+    );
+  }
+
+  if (parsedUrl.protocol !== "http:" && parsedUrl.protocol !== "https:") {
+    throw new Error(
+      "NEXT_PUBLIC_SITE_URL must use the HTTP or HTTPS protocol."
+    );
+  }
+
+  return parsedUrl.toString().replace(/\/$/, "");
+}
+
 export const siteConfig = {
   name: "Puttapaka Women's Handloom Textiles",
   shortName: "Puttapaka",
@@ -31,7 +58,7 @@ export const siteConfig = {
    * Canonical site URL — no trailing slash.
    * Set NEXT_PUBLIC_SITE_URL in .env.local or Cloudflare Pages env.
    */
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "",
+  siteUrl: getSiteUrl(),
 
   /** TBD — add Instagram profile URL once confirmed */
   instagramUrl: "[TBD]",

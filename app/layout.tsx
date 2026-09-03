@@ -50,7 +50,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex flex-col min-h-dvh bg-[var(--background)] text-[var(--foreground)]">
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <div className="flex-1">{children}</div>
         <SiteFooter />
         <WhatsAppFloatingButton />
       </body>

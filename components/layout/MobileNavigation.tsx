@@ -6,7 +6,7 @@ import Link from "next/link";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/shop", label: "Shop" },
-  { href: "/collections", label: "Collections" },
+  { href: "/collections/cotton-sarees", label: "Collections" },
   { href: "/story", label: "Our Story" },
   { href: "/contact", label: "Contact" },
 ];
@@ -20,13 +20,36 @@ const navLinks = [
 export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
-  const firstFocusableRef = useRef<HTMLButtonElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  const closeMenu = () => setIsOpen(false);
 
   // Close on Escape
   useEffect(() => {
     if (!isOpen) return;
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setIsOpen(false);
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeMenu();
+        return;
+      }
+
+      if (e.key !== "Tab" || !drawerRef.current) return;
+      const focusableElements = drawerRef.current.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      );
+      if (focusableElements.length === 0) return;
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
     };
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
@@ -38,16 +61,20 @@ export default function MobileNavigation() {
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
 
-  // Focus first element when drawer opens
+  // Move focus into the drawer and restore it to the trigger on close.
   useEffect(() => {
-    if (isOpen) firstFocusableRef.current?.focus();
+    if (isOpen) {
+      closeButtonRef.current?.focus();
+    } else {
+      triggerRef.current?.focus();
+    }
   }, [isOpen]);
 
   return (
     <>
       {/* Hamburger trigger */}
       <button
-        ref={firstFocusableRef}
+        ref={triggerRef}
         type="button"
         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={isOpen}
@@ -82,6 +109,8 @@ export default function MobileNavigation() {
         role="dialog"
         aria-modal="true"
         aria-label="Navigation menu"
+        aria-hidden={!isOpen}
+        inert={!isOpen}
         className={`fixed top-0 left-0 z-50 h-full w-72 max-w-[85vw] bg-[var(--surface)] shadow-xl flex flex-col transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
@@ -92,9 +121,10 @@ export default function MobileNavigation() {
             Puttapaka
           </span>
           <button
+            ref={closeButtonRef}
             type="button"
             aria-label="Close navigation menu"
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
             className="w-8 h-8 flex items-center justify-center text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
           >
             <svg
@@ -121,7 +151,7 @@ export default function MobileNavigation() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={closeMenu}
                   className="block py-3 text-body-lg text-[var(--foreground)] hover:text-[var(--primary)] border-b border-[var(--border)] transition-colors duration-150"
                 >
                   {link.label}

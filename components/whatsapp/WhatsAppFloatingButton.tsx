@@ -13,6 +13,7 @@ export default function WhatsAppFloatingButton() {
     phoneNumber: siteConfig.whatsappNumber,
     message,
   });
+  if (!href) return null;
 
   return (
     <a
