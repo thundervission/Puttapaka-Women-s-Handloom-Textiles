@@ -1,26 +1,134 @@
 @import "tailwindcss";
 
+/* ============================================================
+   DESIGN TOKENS — CSS Custom Properties
+   Warm-neutral Indian textile editorial palette.
+   Override these after final brand photography is reviewed.
+   ============================================================ */
 :root {
-  --background: #ffffff;
+  /* --- Color tokens ---------------------------------------- */
+  --background: #f7f3ec;
   --foreground: #171717;
+  --primary:    #29334a;
+  --accent:     #a65343;
+  --muted:      #756f67;
+  --border:     #ded7cc;
+  --surface:    #fffdf8;
+
+  /* --- Typography ----------------------------------------- */
+  --font-display: var(--font-cormorant-garamond), Georgia, "Times New Roman", serif;
+  --font-body:    var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  /* --- Spacing scale (8px base) --------------------------- */
+  --space-1:  0.5rem;    /*  8px */
+  --space-2:  1rem;      /* 16px */
+  --space-3:  1.5rem;    /* 24px */
+  --space-4:  2rem;      /* 32px */
+  --space-6:  3rem;      /* 48px */
+  --space-8:  4rem;      /* 64px */
+  --space-12: 6rem;      /* 96px */
+  --space-16: 8rem;      /* 128px */
+
+  /* --- Border radius --------------------------------------- */
+  --radius-sm:   4px;
+  --radius-md:   8px;    /* max for card and image elements */
+  --radius-pill: 9999px; /* pill buttons only */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ============================================================
+   GLOBAL BASE STYLES
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* ============================================================
+   FOCUS STYLES — visible ring on keyboard navigation
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ============================================================
+   TYPOGRAPHY SCALE
+   Usage: className="text-display-xl" etc. via Tailwind @utility
+   ============================================================ */
+@utility text-display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+@utility text-display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+@utility text-display-md {
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@utility text-body-lg {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+@utility text-body-md {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@utility text-body-sm {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@utility text-ui-sm {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   PROHIBITED PATTERNS — never add these:
+   - Multi-hue CSS gradients (background: linear-gradient with 2+ hues)
+   - backdrop-filter: blur (glassmorphism)
+   - border-radius > 8px on card or image elements
+   - CSS animation > 400ms on page load
+   - Decorative SVG blob shapes as backgrounds
+   ============================================================ */
