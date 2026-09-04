@@ -3,7 +3,6 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
 import { siteConfig } from "@/data/site";
-import { createGeneralWhatsAppMessage, createWhatsAppUrl } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: `About ${siteConfig.shortName}`,
@@ -22,11 +21,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const secondaryWhatsAppUrl = createWhatsAppUrl({
-    phoneNumber: siteConfig.whatsappNumberSecondary,
-    message: createGeneralWhatsAppMessage(),
-  });
-
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-8">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]} />
@@ -87,22 +81,18 @@ export default function AboutPage() {
         <ul className="space-y-3 text-body-sm text-[var(--foreground)]">
           <li>
             <span className="font-semibold text-[var(--primary)]">Location:</span>{" "}
-            {siteConfig.location}
+            {siteConfig.location.address}
           </li>
           <li>
-            <span className="font-semibold text-[var(--primary)]">WhatsApp:</span>{" "}
-            {secondaryWhatsAppUrl ? (
-              <a
-                href={secondaryWhatsAppUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-[var(--primary)]"
-              >
-                +91 {siteConfig.whatsappNumberSecondary.slice(2, 5)} {siteConfig.whatsappNumberSecondary.slice(5, 8)} {siteConfig.whatsappNumberSecondary.slice(8, 13)}
-              </a>
-            ) : (
-              "Currently pending confirmation"
-            )}
+            <span className="font-semibold text-[var(--primary)]">Phone contacts:</span>{" "}
+            {siteConfig.contacts.map((c, i) => (
+              <span key={c.phone}>
+                {i > 0 ? " / " : ""}
+                <a href={`tel:${c.phone}`} className="underline underline-offset-2 hover:text-[var(--primary)]">
+                  {c.name} ({c.phone})
+                </a>
+              </span>
+            ))}
           </li>
           <li>
             <span className="font-semibold text-[var(--primary)]">Email:</span>{" "}

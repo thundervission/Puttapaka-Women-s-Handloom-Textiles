@@ -2,20 +2,21 @@ import type { Metadata } from "next";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
 import WhatsAppButton from "@/components/whatsapp/WhatsAppButton";
+import ShopMap from "@/components/map/ShopMap";
 import { siteConfig } from "@/data/site";
 import { createGeneralWhatsAppMessage } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: `Contact ${siteConfig.shortName}`,
   description:
-    "Contact Puttapaka Women’s Handloom Textiles through WhatsApp or visit the business location in Puttapaka Village, Telangana.",
+    "Contact Jayasri (9912570179) or Shashirekha (8317511866) at Puttapaka Women’s Handloom Textiles through phone or WhatsApp, or visit our location in Puttapaka, Telangana.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/contact`,
   },
   openGraph: {
     title: `Contact ${siteConfig.shortName}`,
     description:
-      "Contact Puttapaka Women’s Handloom Textiles through WhatsApp or visit the business location in Puttapaka Village, Telangana.",
+      "Contact Jayasri (9912570179) or Shashirekha (8317511866) at Puttapaka Women’s Handloom Textiles through phone or WhatsApp, or visit our location in Puttapaka, Telangana.",
     url: `${siteConfig.siteUrl}/contact`,
     type: "website",
   },
@@ -38,9 +39,9 @@ export default function ContactPage() {
       </header>
 
       <section className="grid gap-6 md:grid-cols-2">
-        <article className="p-6 border border-[var(--border)] bg-[var(--surface)] rounded-[var(--radius-md)] space-y-4">
+        <article className="p-6 border border-[var(--border)] bg-[var(--surface)] rounded-[var(--radius-md)] space-y-5">
           <h2 className="text-display-md text-[var(--primary)] font-medium">
-            Business details
+            Contact information
           </h2>
           <ul className="space-y-3 text-body-sm text-[var(--foreground)]">
             <li>
@@ -49,7 +50,7 @@ export default function ContactPage() {
             </li>
             <li>
               <span className="font-semibold text-[var(--primary)]">Location:</span>{" "}
-              {siteConfig.location}
+              {siteConfig.location.address}
             </li>
             <li>
               <span className="font-semibold text-[var(--primary)]">Business hours:</span>{" "}
@@ -64,6 +65,27 @@ export default function ContactPage() {
               {siteConfig.instagramUrl === "[TBD]" ? "Pending confirmation" : siteConfig.instagramUrl}
             </li>
           </ul>
+
+          <div className="pt-4 border-t border-[var(--border)] space-y-3">
+            <h3 className="text-ui-sm font-semibold uppercase tracking-wider text-[var(--accent)]">
+              Direct Phone Contacts
+            </h3>
+            <div className="space-y-3">
+              {siteConfig.contacts.map((contact) => (
+                <div key={contact.phone} className="space-y-0.5">
+                  <p className="text-body-sm font-medium text-[var(--primary)]">
+                    {contact.name}
+                  </p>
+                  <a
+                    href={`tel:${contact.phone}`}
+                    className="inline-block text-body-md font-semibold text-[var(--primary)] hover:underline focus-visible:outline-2 focus-visible:outline-[var(--primary)]"
+                  >
+                    {contact.phone}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
         </article>
 
         <article className="p-6 border border-[var(--border)] bg-[var(--background)] rounded-[var(--radius-md)] space-y-4">
@@ -74,13 +96,37 @@ export default function ContactPage() {
             Product availability, styles, and ordering details are confirmed
             directly through WhatsApp.
           </p>
-          <WhatsAppButton
-            phoneNumber={siteConfig.whatsappNumberSecondary}
-            message={whatsappMessage}
-            label="Chat on WhatsApp"
-            variant="primary"
-          />
+          <div className="space-y-3 pt-2">
+            <WhatsAppButton
+              phoneNumber={siteConfig.contacts[0].whatsappNumber}
+              message={whatsappMessage}
+              label={`Chat with ${siteConfig.contacts[0].name}`}
+              variant="primary"
+            />
+            <WhatsAppButton
+              phoneNumber={siteConfig.contacts[1].whatsappNumber}
+              message={whatsappMessage}
+              label={`Chat with ${siteConfig.contacts[1].name}`}
+              variant="outline"
+            />
+          </div>
         </article>
+      </section>
+
+      <section className="p-6 border border-[var(--border)] bg-[var(--surface)] rounded-[var(--radius-md)] space-y-4">
+        <div className="space-y-1">
+          <h2 className="text-display-md text-[var(--primary)] font-medium">
+            Shop address
+          </h2>
+          <p className="text-body-sm font-semibold text-[var(--primary)]">
+            {siteConfig.location.name}
+          </p>
+          <p className="text-body-sm text-[var(--muted)]">
+            {siteConfig.location.address}
+          </p>
+        </div>
+
+        <ShopMap />
       </section>
 
       <div className="flex flex-wrap gap-3">

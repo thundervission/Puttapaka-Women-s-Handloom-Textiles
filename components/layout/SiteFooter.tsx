@@ -45,7 +45,7 @@ export default function SiteFooter() {
               WOMEN&apos;S HANDLOOM TEXTILES
             </p>
             <address className="not-italic text-body-sm text-[var(--surface)]/70 space-y-1">
-              <p>{siteConfig.location}</p>
+              <p>{siteConfig.location.address}</p>
             </address>
             {whatsappUrl && (
               <a

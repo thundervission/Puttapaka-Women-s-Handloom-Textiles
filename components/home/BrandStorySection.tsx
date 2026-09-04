@@ -33,7 +33,7 @@ export default function BrandStorySection() {
               Registered Address
             </span>
             <p className="text-body-sm font-semibold text-[var(--primary)]">
-              {siteConfig.location}
+              {siteConfig.location.address}
             </p>
           </div>
         </div>

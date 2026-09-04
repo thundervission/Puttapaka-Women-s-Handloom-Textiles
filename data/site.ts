@@ -42,17 +42,33 @@ export const siteConfig = {
 
   /**
    * Primary WhatsApp number — digits only, international format.
-   * +91 99125 70419
-   * Set NEXT_PUBLIC_WHATSAPP_NUMBER=919912570419 in .env.local or Cloudflare Pages env.
-   * Falls back to empty string; WhatsApp CTAs render null when this is empty.
+   * Jayasri: +91 99125 70179
+   * Set NEXT_PUBLIC_WHATSAPP_NUMBER=919912570179 in .env.local or Cloudflare Pages env.
    */
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919912570179",
 
   /**
    * Secondary contact number.
-   * +91 83175 11866
+   * Shashirekha: +91 83175 11866
    */
   whatsappNumberSecondary: "918317511866",
+
+  /**
+   * Verified Business Contacts.
+   * Note: No roles, titles, or designations assigned.
+   */
+  contacts: [
+    {
+      name: "Jayasri",
+      phone: "9912570179",
+      whatsappNumber: "919912570179",
+    },
+    {
+      name: "Shashirekha",
+      phone: "8317511866",
+      whatsappNumber: "918317511866",
+    },
+  ],
 
   /**
    * Canonical site URL — no trailing slash.
@@ -66,8 +82,17 @@ export const siteConfig = {
   /** TBD — add business email once confirmed */
   email: "[TBD]",
 
-  /** Confirmed business address */
-  location: "Puttapaka Village, Nalgonda, Telangana – 508 253",
+  /** Verified shop location data */
+  location: {
+    name: "Puttapaka Women's Handloom Textiles",
+    address: "Puttapaka, Telangana 508253, India",
+    latitude: 17.11309723293222,
+    longitude: 78.93280960793456,
+    placeId: "ChIJ67pYBmMZyzsRm20IvVr25CI",
+  },
+
+  /** Optional Google Maps Embed API Key */
+  googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "",
 
   /** TBD — add business hours once confirmed by owner */
   businessHours: "[TBD]",
