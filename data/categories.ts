@@ -42,31 +42,31 @@ export const categories: Category[] = [
   {
     slug: "sarees",
     name: "Sarees",
-    description: "Saree products awaiting catalog review.",
+    description: "Explore our handloom saree collection from Puttapaka.",
     image: "/products/pwt-img-003.webp",
   },
   {
     slug: "handbags",
     name: "Handbags",
-    description: "Handbag products awaiting catalog review.",
+    description: "Explore our handloom handbag collection.",
     image: "/products/pwt-img-006.webp",
   },
   {
     slug: "textiles",
     name: "Textiles",
-    description: "Textile products awaiting catalog review.",
+    description: "Explore our handloom textile collection.",
     image: "/products/pwt-img-009.webp",
   },
   {
     slug: "home-textiles",
     name: "Home Textiles",
-    description: "Home textile products awaiting catalog review.",
+    description: "Explore our handloom home textile collection.",
     image: "/products/pwt-img-038.webp",
   },
   {
     slug: "other",
     name: "Other Textiles",
-    description: "Other textile products awaiting catalog review.",
+    description: "Explore other handloom textile products.",
     image: "/products/pwt-img-016.webp",
   },
 ];

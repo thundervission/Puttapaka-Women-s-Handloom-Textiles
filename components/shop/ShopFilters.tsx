@@ -1,22 +1,22 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import type { PublishedProduct } from "@/types/product";
+import type { PublicCatalogProduct } from "@/types/product";
 import type { Category } from "@/data/categories";
-import { filterBySearch, filterByCategory, sortByPrice } from "@/lib/utils";
+import { filterBySearch, filterByCategory } from "@/lib/utils";
 import SearchBar from "@/components/shop/SearchBar";
 import FilterPanel from "@/components/shop/FilterPanel";
 import ProductGrid from "@/components/product/ProductGrid";
 import Button from "@/components/ui/Button";
 
 interface ShopFiltersProps {
-  products: PublishedProduct[];
+  products: PublicCatalogProduct[];
   categories: Category[];
 }
 
 /**
  * ShopFilters — Client Component.
- * Coordinates search query, category selection, and price sorting state.
+ * Coordinates search and category selection state.
  * Uses lib/utils.ts helpers for filtering and renders live product results.
  */
 export default function ShopFilters({
@@ -25,16 +25,15 @@ export default function ShopFilters({
 }: ShopFiltersProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [sortOrder, setSortOrder] = useState<"default" | "asc" | "desc">(
-    "default"
+  const [sortOrder, setSortOrder] = useState<"featured" | "name-asc">(
+    "featured"
   );
-
   // Calculate active filter count for badge
   const activeFilterCount = useMemo(() => {
     let count = 0;
     if (searchQuery.trim().length > 0) count++;
     if (selectedCategory !== "") count++;
-    if (sortOrder !== "default") count++;
+    if (sortOrder !== "featured") count++;
     return count;
   }, [searchQuery, selectedCategory, sortOrder]);
 
@@ -52,9 +51,12 @@ export default function ShopFilters({
       result = filterByCategory(result, selectedCategory);
     }
 
-    // 3. Price sort
-    if (sortOrder !== "default") {
-      result = sortByPrice(result, sortOrder);
+    // "Featured" preserves the catalog order supplied by the server. The
+    // only alternate public sort is alphabetical, avoiding hidden prices.
+    if (sortOrder === "name-asc") {
+      result = [...result].sort((a, b) =>
+        a.name.localeCompare(b.name, undefined, { sensitivity: "base" })
+      );
     }
 
     return result;
@@ -63,7 +65,7 @@ export default function ShopFilters({
   const handleReset = () => {
     setSearchQuery("");
     setSelectedCategory("");
-    setSortOrder("default");
+    setSortOrder("featured");
   };
 
   return (

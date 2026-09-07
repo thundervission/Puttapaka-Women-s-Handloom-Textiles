@@ -1,8 +1,8 @@
-import type { PublishedProduct } from "@/types/product";
+import type { PublicCatalogProduct } from "@/types/product";
 import ProductCard from "@/components/product/ProductCard";
 
 interface ProductGridProps {
-  products: PublishedProduct[];
+  products: PublicCatalogProduct[];
   emptyMessage?: string;
 }
 

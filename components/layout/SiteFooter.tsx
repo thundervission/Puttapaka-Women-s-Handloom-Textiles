@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 import { createGeneralWhatsAppMessage, createWhatsAppUrl } from "@/lib/whatsapp";
+import { getGoogleMapsUrl } from "@/lib/maps";
 
 const shopLinks = [
   { href: "/shop", label: "All Sarees" },
@@ -30,6 +31,7 @@ export default function SiteFooter() {
     phoneNumber: siteConfig.whatsappNumber,
     message: createGeneralWhatsAppMessage(),
   });
+  const mapsUrl = getGoogleMapsUrl();
 
   return (
     <footer className="bg-[var(--primary)] text-[var(--surface)] mt-auto">
@@ -45,7 +47,14 @@ export default function SiteFooter() {
               WOMEN&apos;S HANDLOOM TEXTILES
             </p>
             <address className="not-italic text-body-sm text-[var(--surface)]/70 space-y-1">
-              <p>{siteConfig.location.address}</p>
+              <a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--surface)] transition-colors"
+              >
+                {siteConfig.location.address}
+              </a>
             </address>
             {whatsappUrl && (
               <a

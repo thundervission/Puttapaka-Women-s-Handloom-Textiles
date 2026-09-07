@@ -1,5 +1,4 @@
 import type { Product } from "@/types/product";
-import { formatPrice } from "@/lib/utils";
 
 interface ReviewProductDetailsProps {
   product: Product;
@@ -98,7 +97,7 @@ export default function ReviewProductDetails({
           <div className="flex justify-between gap-4">
             <dt className="text-[var(--muted)]">Price</dt>
             <dd className="font-medium text-[var(--foreground)]">
-              {formatPrice(product.priceInr)}
+              ₹{product.priceInr.toLocaleString("en-IN")}
             </dd>
           </div>
         )}

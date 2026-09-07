@@ -1,21 +1,15 @@
 /**
- * Formats an integer INR amount as '₹1,850'.
- * Display layer only — never used to store or parse prices.
- */
-export function formatPrice(priceInr: number): string {
-  return `₹${priceInr.toLocaleString("en-IN")}`;
-}
-
-/**
- * Normalizes a search query: trim + lowercase.
+ * Normalizes a search query for customer-friendly matching. Separators such
+ * as spaces and hyphens are treated alike, so "Home Textiles" matches the
+ * `home-textiles` catalog category.
  */
 export function normalizeSearchQuery(query: string): string {
-  return query.trim().toLowerCase();
+  return query.trim().toLowerCase().replace(/[\s_-]+/g, " ");
 }
 
 /**
  * Filters products by a normalized text query against
- * name, id, fabric, color, and categorySlug fields.
+ * name, ID, fabric, colour, category, description, and public pattern text.
  */
 export function filterBySearch<
   T extends {
@@ -24,13 +18,23 @@ export function filterBySearch<
     fabric?: string;
     color?: string;
     categorySlug: string;
+    description?: string;
+    review?: { detectedPattern?: string };
   }
 >(products: T[], query: string): T[] {
   const normalized = normalizeSearchQuery(query);
   if (!normalized) return products;
   return products.filter((p) =>
-    [p.name, p.id, p.fabric ?? "", p.color ?? "", p.categorySlug].some(
-      (field) => field.toLowerCase().includes(normalized)
+    [
+      p.name,
+      p.id,
+      p.fabric ?? "",
+      p.color ?? "",
+      p.categorySlug,
+      p.description ?? "",
+      p.review?.detectedPattern ?? "",
+    ].some((field) =>
+      normalizeSearchQuery(field).includes(normalized)
     )
   );
 }
@@ -43,23 +47,6 @@ export function filterByCategory<T extends { categorySlug: string }>(
   categorySlug: string
 ): T[] {
   return products.filter((p) => p.categorySlug === categorySlug);
-}
-
-/**
- * Sorts products by priceInr. Returns a new array — does not mutate input.
- */
-export function sortByPrice<T extends { priceInr?: number }>(
-  products: T[],
-  direction: "asc" | "desc"
-): T[] {
-  return [...products].sort((a, b) => {
-    if (a.priceInr === undefined && b.priceInr === undefined) return 0;
-    if (a.priceInr === undefined) return 1;
-    if (b.priceInr === undefined) return -1;
-    return direction === "asc"
-      ? a.priceInr - b.priceInr
-      : b.priceInr - a.priceInr;
-  });
 }
 
 /**

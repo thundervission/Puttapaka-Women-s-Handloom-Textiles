@@ -9,14 +9,14 @@ import { createGeneralWhatsAppMessage } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: `Contact ${siteConfig.shortName}`,
   description:
-    "Contact Jayasri (9912570179) or Shashirekha (8317511866) at Puttapaka Women’s Handloom Textiles through phone or WhatsApp, or visit our location in Puttapaka, Telangana.",
+    "Contact Jayasri (9912570419) or Shashirekha (8317511866) at Puttapaka Women’s Handloom Textiles through phone or WhatsApp, or visit our location in Puttapaka, Telangana.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/contact`,
   },
   openGraph: {
     title: `Contact ${siteConfig.shortName}`,
     description:
-      "Contact Jayasri (9912570179) or Shashirekha (8317511866) at Puttapaka Women’s Handloom Textiles through phone or WhatsApp, or visit our location in Puttapaka, Telangana.",
+      "Contact Jayasri (9912570419) or Shashirekha (8317511866) at Puttapaka Women’s Handloom Textiles through phone or WhatsApp, or visit our location in Puttapaka, Telangana.",
     url: `${siteConfig.siteUrl}/contact`,
     type: "website",
   },

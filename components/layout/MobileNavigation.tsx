@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { siteConfig } from "@/data/site";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -19,9 +21,12 @@ const navLinks = [
  */
 export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   const drawerRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const wasOpenRef = useRef(false);
+  const previousPathnameRef = useRef(pathname);
 
   const closeMenu = () => setIsOpen(false);
 
@@ -61,13 +66,43 @@ export default function MobileNavigation() {
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
 
-  // Move focus into the drawer and restore it to the trigger on close.
+  // Close the drawer only when the route actually changes.
+  // Do not close when isOpen changes, otherwise the menu would immediately close
+  // after the user opens it.
+  useEffect(() => {
+    const previousPathname = previousPathnameRef.current;
+    previousPathnameRef.current = pathname;
+
+    if (!isOpen || previousPathname === pathname) return;
+
+    const timeoutId = window.setTimeout(() => setIsOpen(false), 0);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [pathname, isOpen]);
+
+  // Ensure the drawer closes when the viewport switches to desktop layout.
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+    const handleChange = (event: MediaQueryListEvent) => {
+      if (event.matches) {
+        setIsOpen(false);
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  // Move focus into the drawer and restore it to the trigger only after closing.
+  // Avoid stealing focus from the page when this component first hydrates.
   useEffect(() => {
     if (isOpen) {
       closeButtonRef.current?.focus();
-    } else {
+    } else if (wasOpenRef.current) {
       triggerRef.current?.focus();
     }
+    wasOpenRef.current = isOpen;
   }, [isOpen]);
 
   return (
@@ -164,9 +199,8 @@ export default function MobileNavigation() {
         {/* Footer contact */}
         <div className="px-6 py-5 border-t border-[var(--border)]">
           <p className="text-body-sm text-[var(--muted)]">
-            Puttapaka Village, Nalgonda
+            {siteConfig.location.address}
           </p>
-          <p className="text-body-sm text-[var(--muted)]">Telangana – 508 253</p>
         </div>
       </div>
     </>

@@ -1,10 +1,9 @@
 import Link from "next/link";
-import type { PublishedProduct } from "@/types/product";
-import { formatPrice } from "@/lib/utils";
+import type { PublicCatalogProduct } from "@/types/product";
 import ProductAvailability from "@/components/product/ProductAvailability";
 
 interface ProductCardProps {
-  product: PublishedProduct;
+  product: PublicCatalogProduct;
   priority?: boolean;
 }
 
@@ -27,7 +26,7 @@ export default function ProductCard({
       <Link
         href={`/product/${product.slug}`}
         className="flex flex-col h-full focus-visible:outline-2 focus-visible:outline-[var(--primary)] focus-visible:outline-offset-2"
-        aria-label={`${product.name}${product.priceInr !== undefined ? ` — ${formatPrice(product.priceInr)}` : ""}`}
+        aria-label={product.name}
       >
         {/* Aspect 3:4 Image Container */}
         <div className="relative aspect-[3/4] w-full overflow-hidden bg-[var(--background)]">
@@ -58,7 +57,7 @@ export default function ProductCard({
 
           <div className="mt-auto pt-3 flex items-center justify-between border-t border-[var(--border)]/60">
             <span className="text-body-lg font-semibold text-[var(--foreground)]">
-              {product.priceInr !== undefined ? formatPrice(product.priceInr) : "Price on request"}
+              Price on request
             </span>
             <span className="text-body-sm text-[var(--accent)] font-medium underline-offset-4 group-hover:underline">
               View details &rarr;

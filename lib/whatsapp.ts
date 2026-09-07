@@ -1,6 +1,5 @@
 import type { PublishedProduct } from "@/types/product";
 import { siteConfig } from "@/data/site";
-import { formatPrice } from "@/lib/utils";
 
 /**
  * Normalizes a phone number for WhatsApp's international URL format.
@@ -48,9 +47,6 @@ export function createProductWhatsAppMessage(
     ``,
     `Product: ${product.name}`,
     `ID: ${product.id}`,
-    ...(product.priceInr !== undefined
-      ? [`Price: ${formatPrice(product.priceInr)}`]
-      : []),
     `Link: ${productUrl}`,
     ``,
     `Could you please confirm availability and share details on how to order?`,

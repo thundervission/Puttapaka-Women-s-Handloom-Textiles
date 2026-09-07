@@ -6,9 +6,9 @@ import type { Category } from "@/data/categories";
 interface FilterPanelProps {
   categories: Category[];
   selectedCategory: string;
-  sortOrder: "default" | "asc" | "desc";
+  sortOrder: "featured" | "name-asc";
   onCategoryChange: (slug: string) => void;
-  onSortChange: (sort: "default" | "asc" | "desc") => void;
+  onSortChange: (sort: "featured" | "name-asc") => void;
   onReset: () => void;
   activeFilterCount?: number;
 }
@@ -29,7 +29,7 @@ export default function FilterPanel({
   const [isOpen, setIsOpen] = useState(false);
 
   const hasActiveFilters =
-    selectedCategory !== "" || sortOrder !== "default" || activeFilterCount > 0;
+    selectedCategory !== "" || sortOrder !== "featured" || activeFilterCount > 0;
 
   return (
     <div className="w-full">
@@ -57,7 +57,7 @@ export default function FilterPanel({
               d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0m-9.75 0h9.75"
             />
           </svg>
-          <span>Filter & Sort</span>
+          <span>Filters</span>
           {activeFilterCount > 0 && (
             <span className="ml-1 px-2 py-0.5 text-ui-sm font-bold bg-[var(--accent)] text-white rounded-full">
               {activeFilterCount}
@@ -97,7 +97,7 @@ export default function FilterPanel({
                     : "bg-[var(--background)] text-[var(--foreground)] border border-[var(--border)]"
                 }`}
               >
-                All Sarees
+                All Products
               </button>
               {categories.map((cat) => (
                 <button
@@ -116,25 +116,23 @@ export default function FilterPanel({
             </div>
           </div>
 
-          {/* Sort Order */}
           <div>
             <label
               htmlFor="mobile-sort-select"
               className="block text-ui-sm font-semibold text-[var(--primary)] uppercase tracking-wider mb-2"
             >
-              Sort by Price
+              Sort
             </label>
             <select
               id="mobile-sort-select"
               value={sortOrder}
-              onChange={(e) =>
-                onSortChange(e.target.value as "default" | "asc" | "desc")
+              onChange={(event) =>
+                onSortChange(event.target.value as "featured" | "name-asc")
               }
               className="w-full px-3 py-2 bg-[var(--background)] border border-[var(--border)] rounded-[var(--radius-md)] text-body-sm text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]"
             >
-              <option value="default">Default</option>
-              <option value="asc">Price: Low to High</option>
-              <option value="desc">Price: High to Low</option>
+              <option value="featured">Featured</option>
+              <option value="name-asc">Name A–Z</option>
             </select>
           </div>
 
@@ -152,7 +150,7 @@ export default function FilterPanel({
               onClick={() => setIsOpen(false)}
               className="px-4 py-2 bg-[var(--primary)] text-white rounded-[var(--radius-md)] text-body-sm font-medium"
             >
-              Apply & Close
+              Close filters
             </button>
           </div>
         </div>
@@ -174,7 +172,7 @@ export default function FilterPanel({
                 : "bg-[var(--surface)] text-[var(--foreground)] border border-[var(--border)] hover:border-[var(--muted)]"
             }`}
           >
-            All Sarees
+            All Products
           </button>
           {categories.map((cat) => (
             <button
@@ -192,7 +190,6 @@ export default function FilterPanel({
           ))}
         </div>
 
-        {/* Desktop Sort & Reset Controls */}
         <div className="flex items-center gap-4 shrink-0">
           <div className="flex items-center gap-2">
             <label
@@ -204,17 +201,15 @@ export default function FilterPanel({
             <select
               id="desktop-sort-select"
               value={sortOrder}
-              onChange={(e) =>
-                onSortChange(e.target.value as "default" | "asc" | "desc")
+              onChange={(event) =>
+                onSortChange(event.target.value as "featured" | "name-asc")
               }
               className="px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] rounded-[var(--radius-md)] text-body-sm text-[var(--foreground)] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]"
             >
-              <option value="default">Featured</option>
-              <option value="asc">Price: Low to High</option>
-              <option value="desc">Price: High to Low</option>
+              <option value="featured">Featured</option>
+              <option value="name-asc">Name A–Z</option>
             </select>
           </div>
-
           {hasActiveFilters && (
             <button
               type="button"

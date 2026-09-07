@@ -89,3 +89,21 @@ export type PublishedProduct = Omit<Product, "categorySlug"> & {
   categorySlug: string;
   status: "published";
 };
+
+/**
+ * Customer-facing catalog fields required by interactive shop components.
+ * Keep commercial values and internal catalog-review metadata out of the
+ * client bundle even when they are retained in the source catalog.
+ */
+export type PublicCatalogProduct = Pick<
+  PublishedProduct,
+  | "id"
+  | "slug"
+  | "name"
+  | "description"
+  | "categorySlug"
+  | "fabric"
+  | "color"
+  | "availability"
+  | "images"
+>;

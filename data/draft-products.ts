@@ -4,8 +4,8 @@ import type { Product } from "@/types/product";
 export const draftProducts: Product[] = [
   {
     "id": "PWT-003",
-    "slug": "catalog-review-pwt-003",
-    "name": "Unverified green and teal folded saree-like textile",
+    "slug": "product-pwt-003",
+    "name": "green and teal folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with green and teal visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -13,7 +13,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-003.webp",
-        "alt": "Catalog review image for Unverified green and teal folded saree-like textile"
+        "alt": "Product image: green and teal folded saree-like textile"
       }
     ],
     "review": {
@@ -26,8 +26,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-004",
-    "slug": "catalog-review-pwt-004",
-    "name": "Unverified red and maroon folded saree-like textile",
+    "slug": "product-pwt-004",
+    "name": "red and maroon folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with red and maroon visible and a repeating diamond motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -35,7 +35,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-004.webp",
-        "alt": "Catalog review image for Unverified red and maroon folded saree-like textile"
+        "alt": "Product image: red and maroon folded saree-like textile"
       }
     ],
     "review": {
@@ -48,8 +48,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-005",
-    "slug": "catalog-review-pwt-005",
-    "name": "Unverified cream, black, and brown folded saree-like textile",
+    "slug": "product-pwt-005",
+    "name": "cream, black, and brown folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, black, and brown visible and a wide geometric border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -57,7 +57,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-005.webp",
-        "alt": "Catalog review image for Unverified cream, black, and brown folded saree-like textile"
+        "alt": "Product image: cream, black, and brown folded saree-like textile"
       }
     ],
     "review": {
@@ -70,8 +70,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-006",
-    "slug": "catalog-review-pwt-006",
-    "name": "Unverified dark brown and black handbag",
+    "slug": "product-pwt-006",
+    "name": "dark brown and black handbag",
     "description": "Photograph shows a handbag with dark brown and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -79,7 +79,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-006.webp",
-        "alt": "Catalog review image for Unverified dark brown and black handbag"
+        "alt": "Product image: dark brown and black handbag"
       }
     ],
     "review": {
@@ -92,8 +92,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-007",
-    "slug": "catalog-review-pwt-007",
-    "name": "Unverified orange, red, and green folded saree-like textile",
+    "slug": "product-pwt-007",
+    "name": "orange, red, and green folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with orange, red, and green visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -101,7 +101,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-007.webp",
-        "alt": "Catalog review image for Unverified orange, red, and green folded saree-like textile"
+        "alt": "Product image: orange, red, and green folded saree-like textile"
       }
     ],
     "review": {
@@ -114,8 +114,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-008",
-    "slug": "catalog-review-pwt-008",
-    "name": "Unverified gray and black handbag",
+    "slug": "product-pwt-008",
+    "name": "gray and black handbag",
     "description": "Photograph shows a handbag with gray and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -123,7 +123,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-008.webp",
-        "alt": "Catalog review image for Unverified gray and black handbag"
+        "alt": "Product image: gray and black handbag"
       }
     ],
     "review": {
@@ -136,8 +136,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-009",
-    "slug": "catalog-review-pwt-009",
-    "name": "Unverified red, gray, and blue scarf or stole",
+    "slug": "product-pwt-009",
+    "name": "red, gray, and blue scarf or stole",
     "description": "Photograph shows a scarf or stole with red, gray, and blue visible and a striped with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -145,7 +145,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-009.webp",
-        "alt": "Catalog review image for Unverified red, gray, and blue scarf or stole"
+        "alt": "Product image: red, gray, and blue scarf or stole"
       }
     ],
     "review": {
@@ -158,8 +158,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-010",
-    "slug": "catalog-review-pwt-010",
-    "name": "Unverified orange and black handbag",
+    "slug": "product-pwt-010",
+    "name": "orange and black handbag",
     "description": "Photograph shows a handbag with orange and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -167,7 +167,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-010.webp",
-        "alt": "Catalog review image for Unverified orange and black handbag"
+        "alt": "Product image: orange and black handbag"
       }
     ],
     "review": {
@@ -180,8 +180,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-011",
-    "slug": "catalog-review-pwt-011",
-    "name": "Unverified teal and black handbag",
+    "slug": "product-pwt-011",
+    "name": "teal and black handbag",
     "description": "Photograph shows a handbag with teal and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -189,7 +189,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-011.webp",
-        "alt": "Catalog review image for Unverified teal and black handbag"
+        "alt": "Product image: teal and black handbag"
       }
     ],
     "review": {
@@ -202,8 +202,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-012",
-    "slug": "catalog-review-pwt-012",
-    "name": "Unverified cream, red, and mustard folded saree-like textile",
+    "slug": "product-pwt-012",
+    "name": "cream, red, and mustard folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, red, and mustard visible and a color-blocked geometric pattern.",
     "categorySlug": "sarees",
     "status": "published",
@@ -211,7 +211,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-012.webp",
-        "alt": "Catalog review image for Unverified cream, red, and mustard folded saree-like textile"
+        "alt": "Product image: cream, red, and mustard folded saree-like textile"
       }
     ],
     "review": {
@@ -224,8 +224,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-013",
-    "slug": "catalog-review-pwt-013",
-    "name": "Unverified maroon and green folded saree-like textile",
+    "slug": "product-pwt-013",
+    "name": "maroon and green folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with maroon and green visible and a bordered woven motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -233,7 +233,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-013.webp",
-        "alt": "Catalog review image for Unverified maroon and green folded saree-like textile"
+        "alt": "Product image: maroon and green folded saree-like textile"
       }
     ],
     "review": {
@@ -246,8 +246,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-014",
-    "slug": "catalog-review-pwt-014",
-    "name": "Unverified cream, gray, and brown folded saree-like textile",
+    "slug": "product-pwt-014",
+    "name": "cream, gray, and brown folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, gray, and brown visible and a zigzag geometric pattern.",
     "categorySlug": "sarees",
     "status": "published",
@@ -255,7 +255,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-014.webp",
-        "alt": "Catalog review image for Unverified cream, gray, and brown folded saree-like textile"
+        "alt": "Product image: cream, gray, and brown folded saree-like textile"
       }
     ],
     "review": {
@@ -268,8 +268,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-015",
-    "slug": "catalog-review-pwt-015",
-    "name": "Unverified gray and black handbag",
+    "slug": "product-pwt-015",
+    "name": "gray and black handbag",
     "description": "Photograph shows a handbag with gray and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -277,7 +277,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-015.webp",
-        "alt": "Catalog review image for Unverified gray and black handbag"
+        "alt": "Product image: gray and black handbag"
       }
     ],
     "review": {
@@ -290,8 +290,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-016",
-    "slug": "catalog-review-pwt-016",
-    "name": "Unverified red, orange, gray, black, and cream assorted small textile pieces",
+    "slug": "product-pwt-016",
+    "name": "red, orange, gray, black, and cream assorted small textile pieces",
     "description": "Photograph shows a assorted small textile pieces with red, orange, gray, black, and cream visible and a mixed visible patterns.",
     "categorySlug": "other",
     "status": "published",
@@ -299,7 +299,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-016.webp",
-        "alt": "Catalog review image for Unverified red, orange, gray, black, and cream assorted small textile pieces"
+        "alt": "Product image: red, orange, gray, black, and cream assorted small textile pieces"
       }
     ],
     "review": {
@@ -312,8 +312,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-017",
-    "slug": "catalog-review-pwt-017",
-    "name": "Unverified navy blue and black handbag",
+    "slug": "product-pwt-017",
+    "name": "navy blue and black handbag",
     "description": "Photograph shows a handbag with navy blue and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -321,7 +321,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-018.webp",
-        "alt": "Catalog review image for Unverified navy blue and black handbag"
+        "alt": "Product image: navy blue and black handbag"
       }
     ],
     "review": {
@@ -334,8 +334,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-018",
-    "slug": "catalog-review-pwt-018",
-    "name": "Unverified maroon and red folded saree-like textile",
+    "slug": "product-pwt-018",
+    "name": "maroon and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with maroon and red visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -343,7 +343,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-019.webp",
-        "alt": "Catalog review image for Unverified maroon and red folded saree-like textile"
+        "alt": "Product image: maroon and red folded saree-like textile"
       }
     ],
     "review": {
@@ -356,8 +356,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-019",
-    "slug": "catalog-review-pwt-019",
-    "name": "Unverified green, gray, and red scarf or stole",
+    "slug": "product-pwt-019",
+    "name": "green, gray, and red scarf or stole",
     "description": "Photograph shows a scarf or stole with green, gray, and red visible and a striped with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -365,7 +365,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-020.webp",
-        "alt": "Catalog review image for Unverified green, gray, and red scarf or stole"
+        "alt": "Product image: green, gray, and red scarf or stole"
       }
     ],
     "review": {
@@ -378,8 +378,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-020",
-    "slug": "catalog-review-pwt-020",
-    "name": "Unverified navy blue and red folded saree-like textile",
+    "slug": "product-pwt-020",
+    "name": "navy blue and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with navy blue and red visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -387,7 +387,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-021.webp",
-        "alt": "Catalog review image for Unverified navy blue and red folded saree-like textile"
+        "alt": "Product image: navy blue and red folded saree-like textile"
       }
     ],
     "review": {
@@ -400,8 +400,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-021",
-    "slug": "catalog-review-pwt-021",
-    "name": "Unverified purple, maroon, and red folded saree-like textile",
+    "slug": "product-pwt-021",
+    "name": "purple, maroon, and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with purple, maroon, and red visible and a zigzag geometric pattern.",
     "categorySlug": "sarees",
     "status": "published",
@@ -409,7 +409,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-022.webp",
-        "alt": "Catalog review image for Unverified purple, maroon, and red folded saree-like textile"
+        "alt": "Product image: purple, maroon, and red folded saree-like textile"
       }
     ],
     "review": {
@@ -422,8 +422,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-022",
-    "slug": "catalog-review-pwt-022",
-    "name": "Unverified gray, black, and red folded saree-like textile",
+    "slug": "product-pwt-022",
+    "name": "gray, black, and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with gray, black, and red visible and a repeating geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -431,7 +431,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-023.webp",
-        "alt": "Catalog review image for Unverified gray, black, and red folded saree-like textile"
+        "alt": "Product image: gray, black, and red folded saree-like textile"
       }
     ],
     "review": {
@@ -444,8 +444,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-023",
-    "slug": "catalog-review-pwt-023",
-    "name": "Unverified black and gray handbag",
+    "slug": "product-pwt-023",
+    "name": "black and gray handbag",
     "description": "Photograph shows a handbag with black and gray visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -453,7 +453,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-024.webp",
-        "alt": "Catalog review image for Unverified black and gray handbag"
+        "alt": "Product image: black and gray handbag"
       }
     ],
     "review": {
@@ -466,8 +466,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-024",
-    "slug": "catalog-review-pwt-024",
-    "name": "Unverified navy blue and purple saree-like textile, repeated views",
+    "slug": "product-pwt-024",
+    "name": "navy blue and purple saree-like textile, repeated views",
     "description": "Photograph shows a saree-like textile, repeated views with navy blue and purple visible and a small repeating motif with contrasting border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -475,11 +475,11 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-025.webp",
-        "alt": "Catalog review image for Unverified navy blue and purple saree-like textile, repeated views"
+        "alt": "Product image: navy blue and purple saree-like textile, repeated views"
       },
       {
         "src": "/products/pwt-img-040.webp",
-        "alt": "Catalog review image for Unverified navy blue and purple saree-like textile, repeated views"
+        "alt": "Product image: navy blue and purple saree-like textile, repeated views"
       }
     ],
     "review": {
@@ -492,8 +492,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-025",
-    "slug": "catalog-review-pwt-025",
-    "name": "Unverified orange, olive, and black handbag",
+    "slug": "product-pwt-025",
+    "name": "orange, olive, and black handbag",
     "description": "Photograph shows a handbag with orange, olive, and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -501,7 +501,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-026.webp",
-        "alt": "Catalog review image for Unverified orange, olive, and black handbag"
+        "alt": "Product image: orange, olive, and black handbag"
       }
     ],
     "review": {
@@ -514,8 +514,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-026",
-    "slug": "catalog-review-pwt-026",
-    "name": "Unverified navy blue, cream, and black scarf or stole",
+    "slug": "product-pwt-026",
+    "name": "navy blue, cream, and black scarf or stole",
     "description": "Photograph shows a scarf or stole with navy blue, cream, and black visible and a striped with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -523,7 +523,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-027.webp",
-        "alt": "Catalog review image for Unverified navy blue, cream, and black scarf or stole"
+        "alt": "Product image: navy blue, cream, and black scarf or stole"
       }
     ],
     "review": {
@@ -536,8 +536,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-027",
-    "slug": "catalog-review-pwt-027",
-    "name": "Unverified purple, gold, and tan folded saree-like textile",
+    "slug": "product-pwt-027",
+    "name": "purple, gold, and tan folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with purple, gold, and tan visible and a zigzag geometric pattern with broad border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -545,7 +545,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-028.webp",
-        "alt": "Catalog review image for Unverified purple, gold, and tan folded saree-like textile"
+        "alt": "Product image: purple, gold, and tan folded saree-like textile"
       }
     ],
     "review": {
@@ -558,8 +558,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-028",
-    "slug": "catalog-review-pwt-028",
-    "name": "Unverified green, black, and red folded saree-like textile",
+    "slug": "product-pwt-028",
+    "name": "green, black, and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with green, black, and red visible and a repeating diamond motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -567,7 +567,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-029.webp",
-        "alt": "Catalog review image for Unverified green, black, and red folded saree-like textile"
+        "alt": "Product image: green, black, and red folded saree-like textile"
       }
     ],
     "review": {
@@ -580,8 +580,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-029",
-    "slug": "catalog-review-pwt-029",
-    "name": "Unverified maroon and red folded saree-like textile",
+    "slug": "product-pwt-029",
+    "name": "maroon and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with maroon and red visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -589,7 +589,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-030.webp",
-        "alt": "Catalog review image for Unverified maroon and red folded saree-like textile"
+        "alt": "Product image: maroon and red folded saree-like textile"
       }
     ],
     "review": {
@@ -602,8 +602,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-030",
-    "slug": "catalog-review-pwt-030",
-    "name": "Unverified navy blue and red scarf or stole",
+    "slug": "product-pwt-030",
+    "name": "navy blue and red scarf or stole",
     "description": "Photograph shows a scarf or stole with navy blue and red visible and a striped with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -611,7 +611,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-031.webp",
-        "alt": "Catalog review image for Unverified navy blue and red scarf or stole"
+        "alt": "Product image: navy blue and red scarf or stole"
       }
     ],
     "review": {
@@ -624,8 +624,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-031",
-    "slug": "catalog-review-pwt-031",
-    "name": "Unverified purple and magenta folded saree-like textile",
+    "slug": "product-pwt-031",
+    "name": "purple and magenta folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with purple and magenta visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -633,7 +633,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-032.webp",
-        "alt": "Catalog review image for Unverified purple and magenta folded saree-like textile"
+        "alt": "Product image: purple and magenta folded saree-like textile"
       }
     ],
     "review": {
@@ -646,8 +646,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-032",
-    "slug": "catalog-review-pwt-032",
-    "name": "Unverified brown and orange handbag",
+    "slug": "product-pwt-032",
+    "name": "brown and orange handbag",
     "description": "Photograph shows a handbag with brown and orange visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -655,7 +655,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-033.webp",
-        "alt": "Catalog review image for Unverified brown and orange handbag"
+        "alt": "Product image: brown and orange handbag"
       }
     ],
     "review": {
@@ -668,8 +668,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-033",
-    "slug": "catalog-review-pwt-033",
-    "name": "Unverified maroon and black handbag",
+    "slug": "product-pwt-033",
+    "name": "maroon and black handbag",
     "description": "Photograph shows a handbag with maroon and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -677,7 +677,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-034.webp",
-        "alt": "Catalog review image for Unverified maroon and black handbag"
+        "alt": "Product image: maroon and black handbag"
       }
     ],
     "review": {
@@ -690,8 +690,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-034",
-    "slug": "catalog-review-pwt-034",
-    "name": "Unverified teal and black handbag",
+    "slug": "product-pwt-034",
+    "name": "teal and black handbag",
     "description": "Photograph shows a handbag with teal and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -699,7 +699,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-035.webp",
-        "alt": "Catalog review image for Unverified teal and black handbag"
+        "alt": "Product image: teal and black handbag"
       }
     ],
     "review": {
@@ -712,8 +712,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-035",
-    "slug": "catalog-review-pwt-035",
-    "name": "Unverified olive and black handbag",
+    "slug": "product-pwt-035",
+    "name": "olive and black handbag",
     "description": "Photograph shows a handbag with olive and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -721,7 +721,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-036.webp",
-        "alt": "Catalog review image for Unverified olive and black handbag"
+        "alt": "Product image: olive and black handbag"
       }
     ],
     "review": {
@@ -734,8 +734,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-036",
-    "slug": "catalog-review-pwt-036",
-    "name": "Unverified blue, black, and tan assorted small handbags",
+    "slug": "product-pwt-036",
+    "name": "blue, black, and tan assorted small handbags",
     "description": "Photograph shows a assorted small handbags with blue, black, and tan visible and a mixed patterned surfaces.",
     "categorySlug": "handbags",
     "status": "published",
@@ -743,7 +743,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-037.webp",
-        "alt": "Catalog review image for Unverified blue, black, and tan assorted small handbags"
+        "alt": "Product image: blue, black, and tan assorted small handbags"
       }
     ],
     "review": {
@@ -756,8 +756,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-037",
-    "slug": "catalog-review-pwt-037",
-    "name": "Unverified green, red, and black small rectangular textile item",
+    "slug": "product-pwt-037",
+    "name": "green, red, and black small rectangular textile item",
     "description": "Photograph shows a small rectangular textile item with green, red, and black visible and a bordered geometric pattern.",
     "categorySlug": "home-textiles",
     "status": "published",
@@ -765,7 +765,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-038.webp",
-        "alt": "Catalog review image for Unverified green, red, and black small rectangular textile item"
+        "alt": "Product image: green, red, and black small rectangular textile item"
       }
     ],
     "review": {
@@ -778,8 +778,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-038",
-    "slug": "catalog-review-pwt-038",
-    "name": "Unverified magenta and red folded saree-like textile",
+    "slug": "product-pwt-038",
+    "name": "magenta and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with magenta and red visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -787,7 +787,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-039.webp",
-        "alt": "Catalog review image for Unverified magenta and red folded saree-like textile"
+        "alt": "Product image: magenta and red folded saree-like textile"
       }
     ],
     "review": {
@@ -800,8 +800,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-039",
-    "slug": "catalog-review-pwt-039",
-    "name": "Unverified red and gray scarf or stole",
+    "slug": "product-pwt-039",
+    "name": "red and gray scarf or stole",
     "description": "Photograph shows a scarf or stole with red and gray visible and a striped with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -809,7 +809,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-041.webp",
-        "alt": "Catalog review image for Unverified red and gray scarf or stole"
+        "alt": "Product image: red and gray scarf or stole"
       }
     ],
     "review": {
@@ -822,8 +822,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-040",
-    "slug": "catalog-review-pwt-040",
-    "name": "Unverified navy blue and black handbag",
+    "slug": "product-pwt-040",
+    "name": "navy blue and black handbag",
     "description": "Photograph shows a handbag with navy blue and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -831,7 +831,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-042.webp",
-        "alt": "Catalog review image for Unverified navy blue and black handbag"
+        "alt": "Product image: navy blue and black handbag"
       }
     ],
     "review": {
@@ -844,8 +844,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-041",
-    "slug": "catalog-review-pwt-041",
-    "name": "Unverified black and brown handbag",
+    "slug": "product-pwt-041",
+    "name": "black and brown handbag",
     "description": "Photograph shows a handbag with black and brown visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -853,7 +853,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-043.webp",
-        "alt": "Catalog review image for Unverified black and brown handbag"
+        "alt": "Product image: black and brown handbag"
       }
     ],
     "review": {
@@ -866,8 +866,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-042",
-    "slug": "catalog-review-pwt-042",
-    "name": "Unverified red, blue, black, and gray assorted small handbags",
+    "slug": "product-pwt-042",
+    "name": "red, blue, black, and gray assorted small handbags",
     "description": "Photograph shows a assorted small handbags with red, blue, black, and gray visible and a mixed patterned surfaces.",
     "categorySlug": "handbags",
     "status": "published",
@@ -875,7 +875,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-044.webp",
-        "alt": "Catalog review image for Unverified red, blue, black, and gray assorted small handbags"
+        "alt": "Product image: red, blue, black, and gray assorted small handbags"
       }
     ],
     "review": {
@@ -888,8 +888,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-043",
-    "slug": "catalog-review-pwt-043",
-    "name": "Unverified cream, black, and brown folded saree-like textile",
+    "slug": "product-pwt-043",
+    "name": "cream, black, and brown folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, black, and brown visible and a wide geometric border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -897,7 +897,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-045.webp",
-        "alt": "Catalog review image for Unverified cream, black, and brown folded saree-like textile"
+        "alt": "Product image: cream, black, and brown folded saree-like textile"
       }
     ],
     "review": {
@@ -910,8 +910,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-044",
-    "slug": "catalog-review-pwt-044",
-    "name": "Unverified green and blue folded saree-like textile",
+    "slug": "product-pwt-044",
+    "name": "green and blue folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with green and blue visible and a bordered woven motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -919,7 +919,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-046.webp",
-        "alt": "Catalog review image for Unverified green and blue folded saree-like textile"
+        "alt": "Product image: green and blue folded saree-like textile"
       }
     ],
     "review": {
@@ -932,8 +932,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-045",
-    "slug": "catalog-review-pwt-045",
-    "name": "Unverified red and dark teal folded saree-like textile",
+    "slug": "product-pwt-045",
+    "name": "red and dark teal folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with red and dark teal visible and a repeating motif with border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -941,7 +941,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-047.webp",
-        "alt": "Catalog review image for Unverified red and dark teal folded saree-like textile"
+        "alt": "Product image: red and dark teal folded saree-like textile"
       }
     ],
     "review": {
@@ -954,8 +954,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-046",
-    "slug": "catalog-review-pwt-046",
-    "name": "Unverified cream, blue, brown, and red saree-like textile, repeated views",
+    "slug": "product-pwt-046",
+    "name": "cream, blue, brown, and red saree-like textile, repeated views",
     "description": "Photograph shows a saree-like textile, repeated views with cream, blue, brown, and red visible and a geometric patterned border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -963,15 +963,15 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-048.webp",
-        "alt": "Catalog review image for Unverified cream, blue, brown, and red saree-like textile, repeated views"
+        "alt": "Product image: cream, blue, brown, and red saree-like textile, repeated views"
       },
       {
         "src": "/products/pwt-img-049.webp",
-        "alt": "Catalog review image for Unverified cream, blue, brown, and red saree-like textile, repeated views"
+        "alt": "Product image: cream, blue, brown, and red saree-like textile, repeated views"
       },
       {
         "src": "/products/pwt-img-058.webp",
-        "alt": "Catalog review image for Unverified cream, blue, brown, and red saree-like textile, repeated views"
+        "alt": "Product image: cream, blue, brown, and red saree-like textile, repeated views"
       }
     ],
     "review": {
@@ -984,8 +984,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-047",
-    "slug": "catalog-review-pwt-047",
-    "name": "Unverified dark green, black, and red folded saree-like textile",
+    "slug": "product-pwt-047",
+    "name": "dark green, black, and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with dark green, black, and red visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -993,7 +993,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-050.webp",
-        "alt": "Catalog review image for Unverified dark green, black, and red folded saree-like textile"
+        "alt": "Product image: dark green, black, and red folded saree-like textile"
       }
     ],
     "review": {
@@ -1006,8 +1006,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-048",
-    "slug": "catalog-review-pwt-048",
-    "name": "Unverified mustard, black, and cream folded saree-like textile",
+    "slug": "product-pwt-048",
+    "name": "mustard, black, and cream folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with mustard, black, and cream visible and a large geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1015,7 +1015,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-051.webp",
-        "alt": "Catalog review image for Unverified mustard, black, and cream folded saree-like textile"
+        "alt": "Product image: mustard, black, and cream folded saree-like textile"
       }
     ],
     "review": {
@@ -1028,8 +1028,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-049",
-    "slug": "catalog-review-pwt-049",
-    "name": "Unverified navy blue, cream, gray, and brown assorted textile pieces with small accessory",
+    "slug": "product-pwt-049",
+    "name": "navy blue, cream, gray, and brown assorted textile pieces with small accessory",
     "description": "Photograph shows a assorted textile pieces with small accessory with navy blue, cream, gray, and brown visible and a mixed geometric patterns.",
     "categorySlug": "other",
     "status": "published",
@@ -1037,7 +1037,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-052.webp",
-        "alt": "Catalog review image for Unverified navy blue, cream, gray, and brown assorted textile pieces with small accessory"
+        "alt": "Product image: navy blue, cream, gray, and brown assorted textile pieces with small accessory"
       }
     ],
     "review": {
@@ -1050,8 +1050,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-050",
-    "slug": "catalog-review-pwt-050",
-    "name": "Unverified gray, red, and black folded saree-like textile",
+    "slug": "product-pwt-050",
+    "name": "gray, red, and black folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with gray, red, and black visible and a repeating geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1059,7 +1059,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-053.webp",
-        "alt": "Catalog review image for Unverified gray, red, and black folded saree-like textile"
+        "alt": "Product image: gray, red, and black folded saree-like textile"
       }
     ],
     "review": {
@@ -1072,8 +1072,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-051",
-    "slug": "catalog-review-pwt-051",
-    "name": "Unverified olive, black, and lime folded saree-like textile",
+    "slug": "product-pwt-051",
+    "name": "olive, black, and lime folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with olive, black, and lime visible and a bordered geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1081,7 +1081,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-054.webp",
-        "alt": "Catalog review image for Unverified olive, black, and lime folded saree-like textile"
+        "alt": "Product image: olive, black, and lime folded saree-like textile"
       }
     ],
     "review": {
@@ -1094,8 +1094,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-052",
-    "slug": "catalog-review-pwt-052",
-    "name": "Unverified red and green folded saree-like textile",
+    "slug": "product-pwt-052",
+    "name": "red and green folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with red and green visible and a bordered woven motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1103,7 +1103,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-055.webp",
-        "alt": "Catalog review image for Unverified red and green folded saree-like textile"
+        "alt": "Product image: red and green folded saree-like textile"
       }
     ],
     "review": {
@@ -1116,8 +1116,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-053",
-    "slug": "catalog-review-pwt-053",
-    "name": "Unverified black and maroon handbag",
+    "slug": "product-pwt-053",
+    "name": "black and maroon handbag",
     "description": "Photograph shows a handbag with black and maroon visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1125,7 +1125,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-056.webp",
-        "alt": "Catalog review image for Unverified black and maroon handbag"
+        "alt": "Product image: black and maroon handbag"
       }
     ],
     "review": {
@@ -1138,8 +1138,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-054",
-    "slug": "catalog-review-pwt-054",
-    "name": "Unverified navy blue and cream scarf or stole",
+    "slug": "product-pwt-054",
+    "name": "navy blue and cream scarf or stole",
     "description": "Photograph shows a scarf or stole with navy blue and cream visible and a small repeating motif with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -1147,7 +1147,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-057.webp",
-        "alt": "Catalog review image for Unverified navy blue and cream scarf or stole"
+        "alt": "Product image: navy blue and cream scarf or stole"
       }
     ],
     "review": {
@@ -1160,8 +1160,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-055",
-    "slug": "catalog-review-pwt-055",
-    "name": "Unverified orange and black handbag",
+    "slug": "product-pwt-055",
+    "name": "orange and black handbag",
     "description": "Photograph shows a handbag with orange and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1169,7 +1169,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-059.webp",
-        "alt": "Catalog review image for Unverified orange and black handbag"
+        "alt": "Product image: orange and black handbag"
       }
     ],
     "review": {
@@ -1182,8 +1182,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-056",
-    "slug": "catalog-review-pwt-056",
-    "name": "Unverified cream, blue, and multicolor folded saree-like textile",
+    "slug": "product-pwt-056",
+    "name": "cream, blue, and multicolor folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, blue, and multicolor visible and a multicolor striped border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1191,7 +1191,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-060.webp",
-        "alt": "Catalog review image for Unverified cream, blue, and multicolor folded saree-like textile"
+        "alt": "Product image: cream, blue, and multicolor folded saree-like textile"
       }
     ],
     "review": {
@@ -1204,8 +1204,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-057",
-    "slug": "catalog-review-pwt-057",
-    "name": "Unverified maroon and black handbag",
+    "slug": "product-pwt-057",
+    "name": "maroon and black handbag",
     "description": "Photograph shows a handbag with maroon and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1213,7 +1213,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-061.webp",
-        "alt": "Catalog review image for Unverified maroon and black handbag"
+        "alt": "Product image: maroon and black handbag"
       }
     ],
     "review": {
@@ -1226,8 +1226,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-058",
-    "slug": "catalog-review-pwt-058",
-    "name": "Unverified cream, navy blue, and mustard folded saree-like textile",
+    "slug": "product-pwt-058",
+    "name": "cream, navy blue, and mustard folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, navy blue, and mustard visible and a bordered repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1235,7 +1235,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-062.webp",
-        "alt": "Catalog review image for Unverified cream, navy blue, and mustard folded saree-like textile"
+        "alt": "Product image: cream, navy blue, and mustard folded saree-like textile"
       }
     ],
     "review": {
@@ -1248,8 +1248,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-059",
-    "slug": "catalog-review-pwt-059",
-    "name": "Unverified black, red, and gray scarf or stole",
+    "slug": "product-pwt-059",
+    "name": "black, red, and gray scarf or stole",
     "description": "Photograph shows a scarf or stole with black, red, and gray visible and a color-blocked with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -1257,7 +1257,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-063.webp",
-        "alt": "Catalog review image for Unverified black, red, and gray scarf or stole"
+        "alt": "Product image: black, red, and gray scarf or stole"
       }
     ],
     "review": {
@@ -1270,8 +1270,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-060",
-    "slug": "catalog-review-pwt-060",
-    "name": "Unverified pink, navy, teal, olive, and red stack of folded textile items",
+    "slug": "product-pwt-060",
+    "name": "pink, navy, teal, olive, and red stack of folded textile items",
     "description": "Photograph shows a stack of folded textile items with pink, navy, teal, olive, and red visible and a plain/color-blocked folded surfaces.",
     "categorySlug": "other",
     "status": "published",
@@ -1279,7 +1279,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-064.webp",
-        "alt": "Catalog review image for Unverified pink, navy, teal, olive, and red stack of folded textile items"
+        "alt": "Product image: pink, navy, teal, olive, and red stack of folded textile items"
       }
     ],
     "review": {
@@ -1292,8 +1292,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-061",
-    "slug": "catalog-review-pwt-061",
-    "name": "Unverified brown and black handbag",
+    "slug": "product-pwt-061",
+    "name": "brown and black handbag",
     "description": "Photograph shows a handbag with brown and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1301,7 +1301,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-065.webp",
-        "alt": "Catalog review image for Unverified brown and black handbag"
+        "alt": "Product image: brown and black handbag"
       }
     ],
     "review": {
@@ -1314,8 +1314,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-062",
-    "slug": "catalog-review-pwt-062",
-    "name": "Unverified cream, gray, brown, and black folded saree-like textile",
+    "slug": "product-pwt-062",
+    "name": "cream, gray, brown, and black folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, gray, brown, and black visible and a zigzag geometric pattern.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1323,7 +1323,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-066.webp",
-        "alt": "Catalog review image for Unverified cream, gray, brown, and black folded saree-like textile"
+        "alt": "Product image: cream, gray, brown, and black folded saree-like textile"
       }
     ],
     "review": {
@@ -1336,8 +1336,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-063",
-    "slug": "catalog-review-pwt-063",
-    "name": "Unverified navy blue, purple, and red folded saree-like textile",
+    "slug": "product-pwt-063",
+    "name": "navy blue, purple, and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with navy blue, purple, and red visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1345,7 +1345,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-067.webp",
-        "alt": "Catalog review image for Unverified navy blue, purple, and red folded saree-like textile"
+        "alt": "Product image: navy blue, purple, and red folded saree-like textile"
       }
     ],
     "review": {
@@ -1358,8 +1358,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-064",
-    "slug": "catalog-review-pwt-064",
-    "name": "Unverified lime green and mauve saree-like textile, repeated views",
+    "slug": "product-pwt-064",
+    "name": "lime green and mauve saree-like textile, repeated views",
     "description": "Photograph shows a saree-like textile, repeated views with lime green and mauve visible and a small repeating motif with contrasting border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1367,11 +1367,11 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-068.webp",
-        "alt": "Catalog review image for Unverified lime green and mauve saree-like textile, repeated views"
+        "alt": "Product image: lime green and mauve saree-like textile, repeated views"
       },
       {
         "src": "/products/pwt-img-070.webp",
-        "alt": "Catalog review image for Unverified lime green and mauve saree-like textile, repeated views"
+        "alt": "Product image: lime green and mauve saree-like textile, repeated views"
       }
     ],
     "review": {
@@ -1384,8 +1384,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-065",
-    "slug": "catalog-review-pwt-065",
-    "name": "Unverified navy blue, purple, and red folded saree-like textile",
+    "slug": "product-pwt-065",
+    "name": "navy blue, purple, and red folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with navy blue, purple, and red visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1393,7 +1393,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-069.webp",
-        "alt": "Catalog review image for Unverified navy blue, purple, and red folded saree-like textile"
+        "alt": "Product image: navy blue, purple, and red folded saree-like textile"
       }
     ],
     "review": {
@@ -1406,8 +1406,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-066",
-    "slug": "catalog-review-pwt-066",
-    "name": "Unverified teal, black, and cream decorative rectangular textile",
+    "slug": "product-pwt-066",
+    "name": "teal, black, and cream decorative rectangular textile",
     "description": "Photograph shows a decorative rectangular textile with teal, black, and cream visible and a bordered geometric pattern.",
     "categorySlug": "home-textiles",
     "status": "published",
@@ -1415,7 +1415,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-071.webp",
-        "alt": "Catalog review image for Unverified teal, black, and cream decorative rectangular textile"
+        "alt": "Product image: teal, black, and cream decorative rectangular textile"
       }
     ],
     "review": {
@@ -1428,8 +1428,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-067",
-    "slug": "catalog-review-pwt-067",
-    "name": "Unverified maroon, brown, and pink folded saree-like textile",
+    "slug": "product-pwt-067",
+    "name": "maroon, brown, and pink folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with maroon, brown, and pink visible and a repeating motif with border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1437,7 +1437,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-072.webp",
-        "alt": "Catalog review image for Unverified maroon, brown, and pink folded saree-like textile"
+        "alt": "Product image: maroon, brown, and pink folded saree-like textile"
       }
     ],
     "review": {
@@ -1449,31 +1449,9 @@ export const draftProducts: Product[] = [
     }
   },
   {
-    "id": "PWT-068",
-    "slug": "catalog-review-pwt-068",
-    "name": "Unverified cream, yellow, and brown textile detail photograph",
-    "description": "Photograph shows a textile detail photograph with cream, yellow, and brown visible and a close-up woven border/detail.",
-    "categorySlug": "textiles",
-    "status": "published",
-    "provisional": true,
-    "images": [
-      {
-        "src": "/products/pwt-img-073.webp",
-        "alt": "Catalog review image for Unverified cream, yellow, and brown textile detail photograph"
-      }
-    ],
-    "review": {
-      "productType": "textile detail photograph",
-      "detectedColors": "cream, yellow, and brown",
-      "detectedPattern": "close-up woven border/detail",
-      "confidence": "HIGH",
-      "notes": "This appears to be a close-up/detail photograph rather than a clearly separate product; grouping needs owner review."
-    }
-  },
-  {
     "id": "PWT-069",
-    "slug": "catalog-review-pwt-069",
-    "name": "Unverified dark green, black, and mustard folded saree-like textile",
+    "slug": "product-pwt-069",
+    "name": "dark green, black, and mustard folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with dark green, black, and mustard visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1481,7 +1459,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-074.webp",
-        "alt": "Catalog review image for Unverified dark green, black, and mustard folded saree-like textile"
+        "alt": "Product image: dark green, black, and mustard folded saree-like textile"
       }
     ],
     "review": {
@@ -1494,8 +1472,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-070",
-    "slug": "catalog-review-pwt-070",
-    "name": "Unverified cream, red, blue, and mustard folded saree-like textile",
+    "slug": "product-pwt-070",
+    "name": "cream, red, blue, and mustard folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, red, blue, and mustard visible and a multicolor striped border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1503,7 +1481,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-075.webp",
-        "alt": "Catalog review image for Unverified cream, red, blue, and mustard folded saree-like textile"
+        "alt": "Product image: cream, red, blue, and mustard folded saree-like textile"
       }
     ],
     "review": {
@@ -1516,8 +1494,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-071",
-    "slug": "catalog-review-pwt-071",
-    "name": "Unverified maroon and brown handbag",
+    "slug": "product-pwt-071",
+    "name": "maroon and brown handbag",
     "description": "Photograph shows a handbag with maroon and brown visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1525,7 +1503,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-076.webp",
-        "alt": "Catalog review image for Unverified maroon and brown handbag"
+        "alt": "Product image: maroon and brown handbag"
       }
     ],
     "review": {
@@ -1538,8 +1516,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-072",
-    "slug": "catalog-review-pwt-072",
-    "name": "Unverified black and gray handbag",
+    "slug": "product-pwt-072",
+    "name": "black and gray handbag",
     "description": "Photograph shows a handbag with black and gray visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1547,7 +1525,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-077.webp",
-        "alt": "Catalog review image for Unverified black and gray handbag"
+        "alt": "Product image: black and gray handbag"
       }
     ],
     "review": {
@@ -1560,8 +1538,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-073",
-    "slug": "catalog-review-pwt-073",
-    "name": "Unverified red and green folded saree-like textile",
+    "slug": "product-pwt-073",
+    "name": "red and green folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with red and green visible and a bordered woven motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1569,7 +1547,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-078.webp",
-        "alt": "Catalog review image for Unverified red and green folded saree-like textile"
+        "alt": "Product image: red and green folded saree-like textile"
       }
     ],
     "review": {
@@ -1582,8 +1560,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-074",
-    "slug": "catalog-review-pwt-074",
-    "name": "Unverified maroon, mustard, and orange folded saree-like textile",
+    "slug": "product-pwt-074",
+    "name": "maroon, mustard, and orange folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with maroon, mustard, and orange visible and a repeating motif with border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1591,7 +1569,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-079.webp",
-        "alt": "Catalog review image for Unverified maroon, mustard, and orange folded saree-like textile"
+        "alt": "Product image: maroon, mustard, and orange folded saree-like textile"
       }
     ],
     "review": {
@@ -1604,8 +1582,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-075",
-    "slug": "catalog-review-pwt-075",
-    "name": "Unverified brown, black, and peach folded saree-like textile",
+    "slug": "product-pwt-075",
+    "name": "brown, black, and peach folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with brown, black, and peach visible and a large geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1613,7 +1591,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-080.webp",
-        "alt": "Catalog review image for Unverified brown, black, and peach folded saree-like textile"
+        "alt": "Product image: brown, black, and peach folded saree-like textile"
       }
     ],
     "review": {
@@ -1626,8 +1604,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-076",
-    "slug": "catalog-review-pwt-076",
-    "name": "Unverified cream, blue, mustard, and brown folded saree-like textile",
+    "slug": "product-pwt-076",
+    "name": "cream, blue, mustard, and brown folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream, blue, mustard, and brown visible and a bordered geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1635,7 +1613,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-081.webp",
-        "alt": "Catalog review image for Unverified cream, blue, mustard, and brown folded saree-like textile"
+        "alt": "Product image: cream, blue, mustard, and brown folded saree-like textile"
       }
     ],
     "review": {
@@ -1648,8 +1626,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-077",
-    "slug": "catalog-review-pwt-077",
-    "name": "Unverified black and magenta scarf or stole",
+    "slug": "product-pwt-077",
+    "name": "black and magenta scarf or stole",
     "description": "Photograph shows a scarf or stole with black and magenta visible and a small fringed textile.",
     "categorySlug": "textiles",
     "status": "published",
@@ -1657,7 +1635,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-082.webp",
-        "alt": "Catalog review image for Unverified black and magenta scarf or stole"
+        "alt": "Product image: black and magenta scarf or stole"
       }
     ],
     "review": {
@@ -1670,8 +1648,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-078",
-    "slug": "catalog-review-pwt-078",
-    "name": "Unverified peach, orange, and brown folded saree-like textile",
+    "slug": "product-pwt-078",
+    "name": "peach, orange, and brown folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with peach, orange, and brown visible and a large geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1679,7 +1657,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-083.webp",
-        "alt": "Catalog review image for Unverified peach, orange, and brown folded saree-like textile"
+        "alt": "Product image: peach, orange, and brown folded saree-like textile"
       }
     ],
     "review": {
@@ -1692,8 +1670,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-079",
-    "slug": "catalog-review-pwt-079",
-    "name": "Unverified cream and navy blue folded saree-like textile",
+    "slug": "product-pwt-079",
+    "name": "cream and navy blue folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with cream and navy blue visible and a large geometric motif with border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1701,7 +1679,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-084.webp",
-        "alt": "Catalog review image for Unverified cream and navy blue folded saree-like textile"
+        "alt": "Product image: cream and navy blue folded saree-like textile"
       }
     ],
     "review": {
@@ -1714,8 +1692,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-080",
-    "slug": "catalog-review-pwt-080",
-    "name": "Unverified purple and magenta folded saree-like textile",
+    "slug": "product-pwt-080",
+    "name": "purple and magenta folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with purple and magenta visible and a bordered woven motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1723,7 +1701,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-085.webp",
-        "alt": "Catalog review image for Unverified purple and magenta folded saree-like textile"
+        "alt": "Product image: purple and magenta folded saree-like textile"
       }
     ],
     "review": {
@@ -1736,8 +1714,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-081",
-    "slug": "catalog-review-pwt-081",
-    "name": "Unverified dark green folded saree-like textile",
+    "slug": "product-pwt-081",
+    "name": "dark green folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with dark green visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1745,7 +1723,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-086.webp",
-        "alt": "Catalog review image for Unverified dark green folded saree-like textile"
+        "alt": "Product image: dark green folded saree-like textile"
       }
     ],
     "review": {
@@ -1758,8 +1736,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-082",
-    "slug": "catalog-review-pwt-082",
-    "name": "Unverified navy blue and cream folded saree-like textile",
+    "slug": "product-pwt-082",
+    "name": "navy blue and cream folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with navy blue and cream visible and a repeating geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1767,7 +1745,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-087.webp",
-        "alt": "Catalog review image for Unverified navy blue and cream folded saree-like textile"
+        "alt": "Product image: navy blue and cream folded saree-like textile"
       }
     ],
     "review": {
@@ -1780,8 +1758,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-083",
-    "slug": "catalog-review-pwt-083",
-    "name": "Unverified maroon and orange folded saree-like textile",
+    "slug": "product-pwt-083",
+    "name": "maroon and orange folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with maroon and orange visible and a repeating geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -1789,7 +1767,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-088.webp",
-        "alt": "Catalog review image for Unverified maroon and orange folded saree-like textile"
+        "alt": "Product image: maroon and orange folded saree-like textile"
       }
     ],
     "review": {
@@ -1802,8 +1780,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-084",
-    "slug": "catalog-review-pwt-084",
-    "name": "Unverified black and purple handbag",
+    "slug": "product-pwt-084",
+    "name": "black and purple handbag",
     "description": "Photograph shows a handbag with black and purple visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1811,7 +1789,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-089.webp",
-        "alt": "Catalog review image for Unverified black and purple handbag"
+        "alt": "Product image: black and purple handbag"
       }
     ],
     "review": {
@@ -1824,8 +1802,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-085",
-    "slug": "catalog-review-pwt-085",
-    "name": "Unverified cream, green, and orange handbag",
+    "slug": "product-pwt-085",
+    "name": "cream, green, and orange handbag",
     "description": "Photograph shows a handbag with cream, green, and orange visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1833,7 +1811,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-090.webp",
-        "alt": "Catalog review image for Unverified cream, green, and orange handbag"
+        "alt": "Product image: cream, green, and orange handbag"
       }
     ],
     "review": {
@@ -1846,8 +1824,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-086",
-    "slug": "catalog-review-pwt-086",
-    "name": "Unverified light blue and black handbag",
+    "slug": "product-pwt-086",
+    "name": "light blue and black handbag",
     "description": "Photograph shows a handbag with light blue and black visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1855,7 +1833,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-091.webp",
-        "alt": "Catalog review image for Unverified light blue and black handbag"
+        "alt": "Product image: light blue and black handbag"
       }
     ],
     "review": {
@@ -1868,8 +1846,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-087",
-    "slug": "catalog-review-pwt-087",
-    "name": "Unverified brown, olive, red, and cream stack of folded textile items",
+    "slug": "product-pwt-087",
+    "name": "brown, olive, red, and cream stack of folded textile items",
     "description": "Photograph shows a stack of folded textile items with brown, olive, red, and cream visible and a plain/color-blocked folded surfaces.",
     "categorySlug": "other",
     "status": "published",
@@ -1877,7 +1855,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-092.webp",
-        "alt": "Catalog review image for Unverified brown, olive, red, and cream stack of folded textile items"
+        "alt": "Product image: brown, olive, red, and cream stack of folded textile items"
       }
     ],
     "review": {
@@ -1890,8 +1868,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-088",
-    "slug": "catalog-review-pwt-088",
-    "name": "Unverified dark green folded packaged textile",
+    "slug": "product-pwt-088",
+    "name": "dark green folded packaged textile",
     "description": "Photograph shows a folded packaged textile with dark green visible and a small repeating motif.",
     "categorySlug": "other",
     "status": "published",
@@ -1899,7 +1877,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-093.webp",
-        "alt": "Catalog review image for Unverified dark green folded packaged textile"
+        "alt": "Product image: dark green folded packaged textile"
       }
     ],
     "review": {
@@ -1912,8 +1890,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-089",
-    "slug": "catalog-review-pwt-089",
-    "name": "Unverified red handbag",
+    "slug": "product-pwt-089",
+    "name": "red handbag",
     "description": "Photograph shows a handbag with red visible and a patterned textile or plain surface.",
     "categorySlug": "handbags",
     "status": "published",
@@ -1921,7 +1899,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-094.webp",
-        "alt": "Catalog review image for Unverified red handbag"
+        "alt": "Product image: red handbag"
       }
     ],
     "review": {
@@ -1934,8 +1912,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-090",
-    "slug": "catalog-review-pwt-090",
-    "name": "Unverified navy blue, cream, and multicolor scarf or stole",
+    "slug": "product-pwt-090",
+    "name": "navy blue, cream, and multicolor scarf or stole",
     "description": "Photograph shows a scarf or stole with navy blue, cream, and multicolor visible and a striped with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -1943,7 +1921,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-095.webp",
-        "alt": "Catalog review image for Unverified navy blue, cream, and multicolor scarf or stole"
+        "alt": "Product image: navy blue, cream, and multicolor scarf or stole"
       }
     ],
     "review": {
@@ -1956,8 +1934,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-091",
-    "slug": "catalog-review-pwt-091",
-    "name": "Unverified red, black, and cream folded fringed textile",
+    "slug": "product-pwt-091",
+    "name": "red, black, and cream folded fringed textile",
     "description": "Photograph shows a folded fringed textile with red, black, and cream visible and a color-blocked with fringe.",
     "categorySlug": "textiles",
     "status": "published",
@@ -1965,7 +1943,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-096.webp",
-        "alt": "Catalog review image for Unverified red, black, and cream folded fringed textile"
+        "alt": "Product image: red, black, and cream folded fringed textile"
       }
     ],
     "review": {
@@ -1978,8 +1956,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-092",
-    "slug": "catalog-review-pwt-092",
-    "name": "Unverified brown and cream folded packaged textile",
+    "slug": "product-pwt-092",
+    "name": "brown and cream folded packaged textile",
     "description": "Photograph shows a folded packaged textile with brown and cream visible and a small repeating motif.",
     "categorySlug": "other",
     "status": "published",
@@ -1987,7 +1965,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-097.webp",
-        "alt": "Catalog review image for Unverified brown and cream folded packaged textile"
+        "alt": "Product image: brown and cream folded packaged textile"
       }
     ],
     "review": {
@@ -2000,8 +1978,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-093",
-    "slug": "catalog-review-pwt-093",
-    "name": "Unverified gray, mustard, navy, and multicolor assorted folded textiles",
+    "slug": "product-pwt-093",
+    "name": "gray, mustard, navy, and multicolor assorted folded textiles",
     "description": "Photograph shows a assorted folded textiles with gray, mustard, navy, and multicolor visible and a mixed stripes and motifs.",
     "categorySlug": "textiles",
     "status": "published",
@@ -2009,7 +1987,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-098.webp",
-        "alt": "Catalog review image for Unverified gray, mustard, navy, and multicolor assorted folded textiles"
+        "alt": "Product image: gray, mustard, navy, and multicolor assorted folded textiles"
       }
     ],
     "review": {
@@ -2022,8 +2000,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-094",
-    "slug": "catalog-review-pwt-094",
-    "name": "Unverified navy blue, gray, pink, and black saree-like textile, repeated views",
+    "slug": "product-pwt-094",
+    "name": "navy blue, gray, pink, and black saree-like textile, repeated views",
     "description": "Photograph shows a saree-like textile, repeated views with navy blue, gray, pink, and black visible and a small repeating motif with contrasting border.",
     "categorySlug": "sarees",
     "status": "published",
@@ -2031,11 +2009,11 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-099.webp",
-        "alt": "Catalog review image for Unverified navy blue, gray, pink, and black saree-like textile, repeated views"
+        "alt": "Product image: navy blue, gray, pink, and black saree-like textile, repeated views"
       },
       {
         "src": "/products/pwt-img-100.webp",
-        "alt": "Catalog review image for Unverified navy blue, gray, pink, and black saree-like textile, repeated views"
+        "alt": "Product image: navy blue, gray, pink, and black saree-like textile, repeated views"
       }
     ],
     "review": {
@@ -2048,8 +2026,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-095",
-    "slug": "catalog-review-pwt-095",
-    "name": "Unverified red, blue, black, and green stack of packaged textile items",
+    "slug": "product-pwt-095",
+    "name": "red, blue, black, and green stack of packaged textile items",
     "description": "Photograph shows a stack of packaged textile items with red, blue, black, and green visible and a mixed folded surfaces.",
     "categorySlug": "other",
     "status": "published",
@@ -2057,7 +2035,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-101.webp",
-        "alt": "Catalog review image for Unverified red, blue, black, and green stack of packaged textile items"
+        "alt": "Product image: red, blue, black, and green stack of packaged textile items"
       }
     ],
     "review": {
@@ -2070,8 +2048,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-096",
-    "slug": "catalog-review-pwt-096",
-    "name": "Unverified olive, teal, navy, pink, and red assorted textile items",
+    "slug": "product-pwt-096",
+    "name": "olive, teal, navy, pink, and red assorted textile items",
     "description": "Photograph shows a assorted textile items with olive, teal, navy, pink, and red visible and a mixed folded surfaces.",
     "categorySlug": "other",
     "status": "published",
@@ -2079,7 +2057,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-102.webp",
-        "alt": "Catalog review image for Unverified olive, teal, navy, pink, and red assorted textile items"
+        "alt": "Product image: olive, teal, navy, pink, and red assorted textile items"
       }
     ],
     "review": {
@@ -2092,8 +2070,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-097",
-    "slug": "catalog-review-pwt-097",
-    "name": "Unverified dark teal and green folded saree-like textile",
+    "slug": "product-pwt-097",
+    "name": "dark teal and green folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with dark teal and green visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -2101,7 +2079,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-103.webp",
-        "alt": "Catalog review image for Unverified dark teal and green folded saree-like textile"
+        "alt": "Product image: dark teal and green folded saree-like textile"
       }
     ],
     "review": {
@@ -2114,8 +2092,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-098",
-    "slug": "catalog-review-pwt-098",
-    "name": "Unverified gray, olive, navy, red, and cream stack of folded textile items",
+    "slug": "product-pwt-098",
+    "name": "gray, olive, navy, red, and cream stack of folded textile items",
     "description": "Photograph shows a stack of folded textile items with gray, olive, navy, red, and cream visible and a mixed folded surfaces.",
     "categorySlug": "other",
     "status": "published",
@@ -2123,7 +2101,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-104.webp",
-        "alt": "Catalog review image for Unverified gray, olive, navy, red, and cream stack of folded textile items"
+        "alt": "Product image: gray, olive, navy, red, and cream stack of folded textile items"
       }
     ],
     "review": {
@@ -2136,8 +2114,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-099",
-    "slug": "catalog-review-pwt-099",
-    "name": "Unverified mustard and brown folded saree-like textile",
+    "slug": "product-pwt-099",
+    "name": "mustard and brown folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with mustard and brown visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -2145,7 +2123,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-105.webp",
-        "alt": "Catalog review image for Unverified mustard and brown folded saree-like textile"
+        "alt": "Product image: mustard and brown folded saree-like textile"
       }
     ],
     "review": {
@@ -2158,8 +2136,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-100",
-    "slug": "catalog-review-pwt-100",
-    "name": "Unverified maroon and cream scarf or stole",
+    "slug": "product-pwt-100",
+    "name": "maroon and cream scarf or stole",
     "description": "Photograph shows a scarf or stole with maroon and cream visible and a small repeating motif.",
     "categorySlug": "textiles",
     "status": "published",
@@ -2167,7 +2145,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-106.webp",
-        "alt": "Catalog review image for Unverified maroon and cream scarf or stole"
+        "alt": "Product image: maroon and cream scarf or stole"
       }
     ],
     "review": {
@@ -2180,8 +2158,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-101",
-    "slug": "catalog-review-pwt-101",
-    "name": "Unverified maroon and cream folded saree-like textile",
+    "slug": "product-pwt-101",
+    "name": "maroon and cream folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with maroon and cream visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -2189,7 +2167,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-107.webp",
-        "alt": "Catalog review image for Unverified maroon and cream folded saree-like textile"
+        "alt": "Product image: maroon and cream folded saree-like textile"
       }
     ],
     "review": {
@@ -2202,8 +2180,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-102",
-    "slug": "catalog-review-pwt-102",
-    "name": "Unverified maroon and cream folded saree-like textile",
+    "slug": "product-pwt-102",
+    "name": "maroon and cream folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with maroon and cream visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -2211,7 +2189,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-108.webp",
-        "alt": "Catalog review image for Unverified maroon and cream folded saree-like textile"
+        "alt": "Product image: maroon and cream folded saree-like textile"
       }
     ],
     "review": {
@@ -2224,8 +2202,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-103",
-    "slug": "catalog-review-pwt-103",
-    "name": "Unverified navy blue and cream folded saree-like textile",
+    "slug": "product-pwt-103",
+    "name": "navy blue and cream folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with navy blue and cream visible and a repeating geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -2233,7 +2211,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-109.webp",
-        "alt": "Catalog review image for Unverified navy blue and cream folded saree-like textile"
+        "alt": "Product image: navy blue and cream folded saree-like textile"
       }
     ],
     "review": {
@@ -2246,8 +2224,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-104",
-    "slug": "catalog-review-pwt-104",
-    "name": "Unverified red and cream folded saree-like textile",
+    "slug": "product-pwt-104",
+    "name": "red and cream folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with red and cream visible and a repeating geometric motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -2255,7 +2233,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-110.webp",
-        "alt": "Catalog review image for Unverified red and cream folded saree-like textile"
+        "alt": "Product image: red and cream folded saree-like textile"
       }
     ],
     "review": {
@@ -2268,8 +2246,8 @@ export const draftProducts: Product[] = [
   },
   {
     "id": "PWT-105",
-    "slug": "catalog-review-pwt-105",
-    "name": "Unverified dark green and teal folded saree-like textile",
+    "slug": "product-pwt-105",
+    "name": "dark green and teal folded saree-like textile",
     "description": "Photograph shows a folded saree-like textile with dark green and teal visible and a small repeating motif.",
     "categorySlug": "sarees",
     "status": "published",
@@ -2277,7 +2255,7 @@ export const draftProducts: Product[] = [
     "images": [
       {
         "src": "/products/pwt-img-111.webp",
-        "alt": "Catalog review image for Unverified dark green and teal folded saree-like textile"
+        "alt": "Product image: dark green and teal folded saree-like textile"
       }
     ],
     "review": {

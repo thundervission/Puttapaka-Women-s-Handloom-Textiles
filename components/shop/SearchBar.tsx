@@ -16,7 +16,7 @@ export default function SearchBar({
   value,
   onChange,
   onClear,
-  placeholder = "Search sarees by name, fabric, color, or ID...",
+  placeholder = "Search products by name, fabric, color, or ID...",
   className = "",
 }: SearchBarProps) {
   return (

@@ -1,6 +1,5 @@
 import type { PublishedProduct } from "@/types/product";
 import { siteConfig } from "@/data/site";
-import { formatPrice } from "@/lib/utils";
 import { createProductWhatsAppMessage } from "@/lib/whatsapp";
 import ProductAvailability from "@/components/product/ProductAvailability";
 import WhatsAppButton from "@/components/whatsapp/WhatsAppButton";
@@ -44,7 +43,7 @@ export default function ProductDetails({
       {/* Price */}
       <div className="pb-4 border-b border-[var(--border)]">
         <span className="text-display-md font-semibold text-[var(--foreground)]">
-          {product.priceInr !== undefined ? formatPrice(product.priceInr) : "Price on request"}
+          Price on request
         </span>
         <span className="block text-body-sm text-[var(--muted)] mt-0.5">
           Shipping &amp; delivery details confirmed directly via WhatsApp.

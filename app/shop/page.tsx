@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getPublicProducts } from "@/data/products";
+import type { PublicCatalogProduct } from "@/types/product";
 import { categories } from "@/data/categories";
 import { siteConfig } from "@/data/site";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
@@ -26,7 +27,32 @@ export const metadata: Metadata = {
  * Primary catalog listing page for browsing products with interactive client filtering.
  */
 export default async function ShopPage() {
-  const products = getPublicProducts();
+  // ShopFilters is a Client Component. Send only customer-facing fields so
+  // stored prices and catalog-review notes cannot be serialized into public
+  // page data.
+  const products: PublicCatalogProduct[] = getPublicProducts().map(
+    ({
+      id,
+      slug,
+      name,
+      description,
+      categorySlug,
+      fabric,
+      color,
+      availability,
+      images,
+    }) => ({
+      id,
+      slug,
+      name,
+      description,
+      categorySlug,
+      fabric,
+      color,
+      availability,
+      images,
+    })
+  );
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-8">
